@@ -31,21 +31,25 @@ table {
 ** Menu
 ** -----------------------------------------------------------------------------
 */
-#menu{
+#menu {
     background-size: cover;
     min-height: 666px;
 }
-#menu h2{
+#menu h2 {
     color: #fff;
     font-size: 42px;
     font-family: 'Satisfy', sans-serif;
 }
-#menu p{
-    color: #01babc;
+#menu p {
+    color: #222;
     font-size: 32px;
     font-family: 'PT Sans', sans-serif;
 }
-.bg-color{
-    background-color: #000;
+.bg-color {
+    background-color: rgba(0, 0, 0, 0.61);
     min-height: 666px;
+}
+.btn {
+	color: #fff;
+    background-color: #01babc;
 }

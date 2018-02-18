@@ -1,3 +1,7 @@
+/*
+** Base
+** -----------------------------------------------------------------------------
+*/
 body {
 	font-size: 16px;
   line-height: 1.50;
@@ -7,22 +11,41 @@ body {
   font-weight: 400;
   overflow-x: hidden;
 }
-
 ol, ul {
 	list-style: none;
 }
-
 blockquote, q {
 	quotes: none;
 }
-
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/*
+** Menu
+** -----------------------------------------------------------------------------
+*/
+#menu{
+    background-size: cover;
+    min-height: 666px;
+}
+#menu h2{
+    color: #fff;
+    font-size: 42px;
+    font-family: 'Satisfy', sans-serif;
+}
+#menu p{
+    color: #01babc;
+    font-size: 32px;
+    font-family: 'PT Sans', sans-serif;
+}
+.bg-color{
+    background-color: #000;
+    min-height: 666px;
 }

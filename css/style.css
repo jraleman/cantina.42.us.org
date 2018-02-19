@@ -2,58 +2,68 @@
 ** Base
 ** -----------------------------------------------------------------------------
 */
+
 body {
-	font-size: 16px;
+  font-size: 16px;
   line-height: 1.50;
   color: #fff;
   font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   overflow-x: hidden;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /*
 ** Menu
 ** -----------------------------------------------------------------------------
 */
+
 #menu {
-    background-size: cover;
-    min-height: 666px;
+  background-size: cover;
+  min-height: 666px;
 }
+
 #menu h2 {
-    color: #fff;
-    font-size: 42px;
-    font-family: 'Satisfy', sans-serif;
+  color: #fff;
+  font-size: 42px;
+  font-family: 'Satisfy', sans-serif;
 }
+
 #menu p {
-    color: #222;
-    font-size: 32px;
-    font-family: 'PT Sans', sans-serif;
+  color: #222;
+  font-size: 32px;
+  font-family: 'PT Sans', sans-serif;
 }
+
 .bg-color {
-    background-color: rgba(0, 0, 0, 0.61);
-    min-height: 666px;
+  background-color: rgba(0, 0, 0, 0.61);
+  min-height: 666px;
 }
+
 .btn {
-	color: #fff;
-    background-color: #01babc;
+  color: #fff;
+  background-color: #01babc;
 }
+
 .logo {
-	width: 420px;
-	height: auto;
+  width: 420px;
+  height: auto;
 }

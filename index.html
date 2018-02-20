@@ -38,6 +38,7 @@
       <div class="container">
         <div id="menuNav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#carte">Menu</a>
           <a href="#about">About</a>
           <a href="#dishes">Dishes</a>
           <a href="#location">Location</a>
@@ -50,11 +51,11 @@
     <!-- Logo && Login Button -->
     <div class="container">
       <div class="row">
-        <div class="inner text-center">
+        <div class="text-center">
           <img class="logo" src="images/logo-white.png" alt="cantina-logo">
           <h1>La Cantina</h1>
           <br />
-          <a href="#" class="btn">
+          <a href="dashboard.html" class="btn" target="_self">
             <i class="fas fa-sign-in-alt"></i> Log in
           </a>
         </div>
@@ -67,9 +68,68 @@
   <section id="carte">
     <div class="container">
       <div class="row">
+        <!-- Title and description -->
         <div class="col-md-12 text-center">
           <h2>Le Menu</h2>
           <p></p>
+        </div>
+        <!-- Filters -->
+        <div class="col-md-12 text-center" id="menu-filters">
+          <ul>
+            <li><a class="filter active" data-filter=".menu-item">Show All</a></li>
+            <li><a class="filter" data-filter=".breakfast">Breakfast</a></li>
+            <li><a class="filter" data-filter=".lunch">Lunch</a></li>
+            <li><a class="filter" data-filter=".dinner">Dinner</a></li>
+          </ul>
+        </div>
+        <!-- Menu -->
+        <div class="col-md-12 text-center" id="menu-wrapper">
+
+          <div class="breakfast menu-item">
+            <span class="clearfix">
+              <span class="menu-title">
+                Pancakes with Coke and Cream
+              </span>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">
+                $4
+              </span>
+            </span>
+            <span class="menu-subtitle">
+              07:00 - 09:00
+            </span>
+          </div>
+
+          <div class="lunch menu-item">
+            <span class="clearfix">
+              <span class="menu-title">
+                Burger with a Special Sativa Sauce
+              </span>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">
+                $6
+              </span>
+            </span>
+            <span class="menu-subtitle">
+              12:00 - 14:00
+            </span>
+          </div>
+
+          <div class="dinner menu-item">
+            <span class="clearfix">
+              <span class="menu-title">
+                Pasta a la Pingatare
+              </span>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">
+                $6
+              </span>
+            </span>
+            <span class="menu-subtitle">
+              17:00 - 19:00
+            </span>
+          </div>
+
         </div>
       </div>
     </div>

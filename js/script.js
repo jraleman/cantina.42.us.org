@@ -5,3 +5,7 @@ function openNav() {
 function closeNav() {
   document.getElementById("menuNav").style.width = "0";
 }
+
+$(document).ready(function() {
+    $('.pgwSlider').pgwSlider();
+});

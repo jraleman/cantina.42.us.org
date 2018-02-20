@@ -213,7 +213,20 @@ h1 {
 }
 
 /*
-** faq section
+** Slideshow section
+** -----------------------------------------------------------------------------
+*/
+
+#slideshow {
+  margin: 50px auto;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+/*
+** FAQ section
 ** -----------------------------------------------------------------------------
 */
 

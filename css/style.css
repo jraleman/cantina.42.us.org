@@ -84,18 +84,6 @@ h1 {
                     url("../images/menu-bg.jpg");
 }
 
-#banner h2 {
-  color: #fff;
-  font-size: 42px;
-  font-family: 'Satisfy', sans-serif;
-}
-
-#banner p {
-  color: #222;
-  font-size: 32px;
-  font-family: 'PT Sans', sans-serif;
-}
-
 .btn {
   color: #fff;
   background-color: #01babc;
@@ -108,4 +96,21 @@ h1 {
   width: 85%;
   height: auto;
   margin-top: 21px;
+}
+
+#carte {
+  margin-top: 21px;
+}
+
+#carte h2 {
+  color: #01babc;
+  font-size: 48px;
+  font-family: 'Satisfy', sans-serif;
+  font-weight: 300;
+}
+
+#carte p {
+  color: #222;
+  font-size: 32px;
+  font-family: 'PT Sans', sans-serif;
 }

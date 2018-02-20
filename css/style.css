@@ -213,6 +213,28 @@ h1 {
 }
 
 /*
+** faq section
+** -----------------------------------------------------------------------------
+*/
+
+#faq {
+  margin-top: 21px;
+}
+
+#faq h2 {
+  color: #01babc;
+  font-size: 48px;
+  font-family: 'Satisfy', sans-serif;
+  font-weight: 300;
+}
+
+#faq p {
+  color: #222;
+  font-size: 32px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/*
 ** Footer section
 ** -----------------------------------------------------------------------------
 */

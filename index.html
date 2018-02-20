@@ -32,13 +32,27 @@
   <!-- Menu section
   ================= -->
   <section id="menu">
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <div id="menuNav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#about">About</a>
+          <a href="#dishes">Dishes</a>
+          <a href="#location">Location</a>
+        </div>
+        <span onclick="openNav()" class="pull-right menu-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </div>
+    </header>
+    <!-- Logo and buttons -->
     <div class="container">
       <div class="row">
         <div class="inner text-center">
           <img class="logo" src="images/logo-white.png" alt="cantina-logo">
           <h1>La Cantina</h1>
           <br />
-
           <button type="button" name="button" class="btn">Log in</button>
           <br />
           <button type="button" name="button" class="btn">See Menu</button>

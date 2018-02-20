@@ -21,7 +21,10 @@ blockquote, q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -63,7 +66,8 @@ h1 {
   transition: 0.3s
 }
 
-.sidenav a:hover, .offcanvas a:focus {
+.sidenav a:hover,
+.offcanvas a:focus {
   color: #f1f1f1;
 }
 
@@ -83,8 +87,7 @@ h1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: radial-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
-                                    url("../images/menu-bg.jpg");
+  background-image: radial-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("../images/menu-bg.jpg");
 }
 
 .menu-bars-icon {
@@ -207,4 +210,72 @@ h1 {
 .menu-item span.clearfix {
   position: relative;
   display: block;
+}
+
+/*
+** Footer section
+** -----------------------------------------------------------------------------
+*/
+
+.footer {
+  width: 100%;
+  background-color: #222;
+  position: relative;
+  z-index: 1;
+}
+
+.footer a {
+  color: #eee;
+}
+
+.footer .footer-top {
+  padding-top: 9rem;
+  padding-bottom: 5rem;
+}
+
+.footer .widget-title,
+.footer .widget-title a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: #999;
+}
+
+.footer .widget-title {
+  margin-bottom: -10px;
+  font-family: 'Satisfy', sans-serif;
+  font-size: 42px;
+  color: #eee;
+}
+
+.footer .widget a {
+  text-decoration: none;
+  color: #eee;
+}
+
+.footer .widget a:hover {
+  text-decoration: none;
+  color: #80dcdd;
+}
+
+.footer .widget,
+.footer address {
+  color: #999;
+  text-transform: none;
+  font-style: normal;
+  padding-bottom: 15px;
+}
+
+.footer .navigation,
+.footer .social-list {
+  float: none;
+  margin-bottom: 20px;
+}
+
+.footer .social-list {
+  font-size: 72px;
+  font-weight: normal;
+  color: #eee;
+  text-transform: uppercase;
+  margin: 0 5px;
 }

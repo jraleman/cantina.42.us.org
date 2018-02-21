@@ -35,8 +35,10 @@ table {
 }
 
 h1 {
-  font-family: 2em 'Montserrat', sans-serif;
+  font-family: 'Satisfy', sans-serif;
+  /*font-family: 2em 'Montserrat', sans-serif;*/
   font-size: 72px;
+  padding-top: 21px;
 }
 
 /*

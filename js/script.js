@@ -5,10 +5,12 @@
 
 function closeNav() {
   document.getElementById("menuNav").style.width = "0";
+  return ;
 }
 
 function openNav() {
   document.getElementById("menuNav").style.width = "250px";
+  return ;
 }
 
 /*
@@ -17,5 +19,17 @@ function openNav() {
 */
 
 $(document).ready(function() {
-    $('.pgwSlider').pgwSlider();
+  $('.pgwSlider').pgwSlider();
+  return ;
+});
+
+/*
+** scrollToSection
+** .............................................................................
+*/
+
+$(".scrollToSection").click(function(e) {
+  e.preventDefault();
+  var aid = $(this).attr("href");
+  $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
 });

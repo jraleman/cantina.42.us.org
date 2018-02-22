@@ -68,7 +68,7 @@ h1 {
 
 .header-icon {
   float: left;
-  margin-left: 42px;
+  margin-left: 24px;
 }
 
 .sidenav {
@@ -365,6 +365,7 @@ h1 {
   font-size: 48px;
   font-family: 'Satisfy', sans-serif;
   font-weight: 300;
+  margin-top: 24px;
 }
 
 .card-wrapper {
@@ -383,6 +384,7 @@ h1 {
   font-size: 48px;
   font-family: 'Satisfy', sans-serif;
   font-weight: 300;
+  margin-top: 24px;
 }
 
 /*
@@ -395,6 +397,7 @@ h1 {
   font-size: 48px;
   font-family: 'Satisfy', sans-serif;
   font-weight: 300;
+  margin-top: 24px;
 }
 
 /*

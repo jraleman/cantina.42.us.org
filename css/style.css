@@ -348,10 +348,42 @@ h1 {
 ** Add Credit section
 ** -----------------------------------------------------------------------------
 */
+
+#credit h2 {
+  color: #01babc;
+  font-size: 48px;
+  font-family: 'Satisfy', sans-serif;
+  font-weight: 300;
+}
+
 .card-wrapper {
   margin-top: 42px;
   position:relative;
   z-index:-1;
+}
+
+/*
+** Payment History section
+** -----------------------------------------------------------------------------
+*/
+
+#history h2 {
+  color: #01babc;
+  font-size: 48px;
+  font-family: 'Satisfy', sans-serif;
+  font-weight: 300;
+}
+
+/*
+** Eaten Meals section
+** -----------------------------------------------------------------------------
+*/
+
+#meals h2 {
+  color: #01babc;
+  font-size: 48px;
+  font-family: 'Satisfy', sans-serif;
+  font-weight: 300;
 }
 
 /*

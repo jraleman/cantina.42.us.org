@@ -28,13 +28,27 @@ function openNav() {
 }
 
 /*
+** Carte (food menu) filter function(s)
+** .............................................................................
+*/
+
+$("#menu-filters li a").click(function() {
+  $("#menu-filters li a").removeClass('active');
+  $(this).addClass('active');
+  var selectedFilter = $(this).data("filter");
+  $(".menu-item").fadeOut();
+  setTimeout(function() {
+    $(selectedFilter).slideDown();
+  }, 300);
+});
+
+/*
 ** Slider function(s)
 ** .............................................................................
 */
 
 $(document).ready(function() {
   $('.pgwSlider').pgwSlider();
-  return ;
 });
 
 /*

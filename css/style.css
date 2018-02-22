@@ -147,9 +147,10 @@ h1 {
 }
 
 #carte p {
-  color: #222;
-  font-size: 32px;
+  color: #666;
+  font-size: 16px;
   font-family: 'PT Sans', sans-serif;
+  font-style: italic;
 }
 
 #menu-filters ul li a.active {
@@ -294,6 +295,13 @@ h1 {
   font-size: 48px;
   font-family: 'Satisfy', sans-serif;
   font-weight: 300;
+}
+
+#faq p {
+  color: #666;
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: italic;
 }
 
 .faq-item {

@@ -46,17 +46,23 @@ h1 {
 */
 
 #header {
-  background-color: #222;
+  background-color: #333;
+  border-bottom: 2px solid #01babc;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  height: 88px;
+}
+
+#header h1 {
+  position: relative;
+  font-size: 48px;
+  float: left;
 }
 
 .menu-bars-icon {
   color: #eee;
   font-size: 42px;
-}
-
-.header-logo {
-  width: 84px;
-  height: auto;
+  margin-right: 36px;
   margin-top: 12px;
 }
 

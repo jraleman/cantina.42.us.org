@@ -214,6 +214,45 @@ h1 {
   display: block;
 }
 
+@media (max-width: 768px) {
+
+  .menu-item .menu-title {
+    font-family: Montserrat, arial;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #222;
+    position: static;
+    float: left;
+  }
+
+  .menu-item .menu-line {
+    position: static;
+    bottom: 6px;
+    border-bottom: 1px dotted rgba(0, 0, 0, .3);
+    margin-left: .6rem;
+    margin-right: .6rem;
+    left: 360px;
+    right: 24px;
+  }
+
+  .menu-item .menu-price {
+    font-weight: 500;
+    position: static;
+    right: 0;
+    top: 0;
+    color: #006f70;
+    display: block;
+    text-align: left;
+  }
+  .menu-item .menu-subtitle {
+    position: static;
+    color: #666;
+    font-family: Satisfy, 'Open Sans', arial;
+    font-size: 1.2rem;
+    float: left;
+  }
+}
+
 /*
 ** Slideshow section
 ** -----------------------------------------------------------------------------

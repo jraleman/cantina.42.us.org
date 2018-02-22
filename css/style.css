@@ -369,10 +369,64 @@ h1 {
 }
 
 .card-wrapper {
-  margin-top: 42px;
-  position:relative;
-  z-index:-1;
+  margin-top: 12px;
+  position: relative;
+  z-index: -1;
 }
+
+
+
+
+input {
+  margin: 1px 0px;
+  padding-left: 3%;
+}
+input[type="text"]{
+  display: block;
+  height: 50px;
+  width: 97%;
+  border: none;
+}
+input[type="email"]{
+  display: block;
+  height: 50px;
+  width: 97%;
+  border: none;
+}
+input[type="submit"]{
+  display: block;
+  height: 60px;
+  width: 242px;
+  border: none;
+  background-color: #01babc;
+  color: #eee;
+  margin-top: 2px;
+  curson: pointer;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+input[type="submit"]:hover{
+  background-color: #99e3e4;
+  transition: 0.3s ease;
+}
+#column-left {
+  width: 46.8%;
+  float: left;
+  margin-bottom: 2px;
+}
+#column-right {
+  width: 46.8%;
+  float: right;
+}
+
+
+
+
+
+
+
 
 /*
 ** Payment History section

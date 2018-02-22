@@ -76,13 +76,14 @@ var card = new Card({
     container: '.card-wrapper', // *required*
 
     formSelectors: {
-        numberInput: 'input#number', // optional — default input[name="number"]
-        expiryInput: 'input#expiry', // optional — default input[name="expiry"]
-        cvcInput: 'input#cvc', // optional — default input[name="cvc"]
-        nameInput: 'input#name' // optional - defaults input[name="name"]
+        // numberInput: 'input#number', // optional — default input[name="number"]
+        // expiryInput: 'input#expiry', // optional — default input[name="expiry"]
+        // cvcInput: 'input#cvc', // optional — default input[name="cvc"]
+        // nameInput: 'input#name' // optional - defaults input[name="name"]
+      nameInput: 'input[name="first-name"], input[name="last-name"]'
     },
 
-    width: 200, // optional — default 350px
+    width: 242, // optional — default 350px
     formatting: true, // optional - default true
 
     // Strings for translation - optional
@@ -94,7 +95,7 @@ var card = new Card({
     // Default placeholders for rendered fields - optional
     placeholders: {
         number: '•••• •••• •••• ••••',
-        name: 'Full Name',
+        name: '',
         expiry: '••/••',
         cvc: '•••'
     },

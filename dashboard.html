@@ -13,6 +13,7 @@
   ============== -->
   <link rel="stylesheet" type="text/css" href="css/reset.css" />
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 
   <!-- Font files
@@ -31,9 +32,37 @@
 
 <body>
 
+  <!-- Header + NavMenu
+  =================== -->
+  <header id="header">
+    <div class="container">
+      <div id="menuNav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#credit" class="scrollToSection">Add Credit</a>
+        <a href="#history" class="scrollToSection">Payment History</a>
+        <a href="#meals" class="scrollToSection">Eaten Meals</a>
+      </div>
+      <span onclick="openNav()" class="pull-right menu-bars-icon">
+        <i class="fas fa-bars"></i>
+      </span>
+      <img class="header-logo" src="images/logo-white.svg" alt="cantina-logo" />
+      <h1>La Cantina</h1>
+    </div>
+  </header>
+
+
+  <!-- Content section
+  =================== -->
+  <section id="content">
+    <div id="credit"></div>
+    <div id="history"></div>
+    <div id="meals"></div>
+  </section>
+
   <!-- JavaScript files
   ===================== -->
   <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="js/wow.min.js" charset="utf-8"></script>
   <script src="js/script.js" charset="utf-8"></script>
 </body>

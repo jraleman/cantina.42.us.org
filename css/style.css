@@ -376,34 +376,44 @@ h1 {
 */
 
 #balance {
+  border-color: #999;
+  border-style: dashed;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-width: thin;
   display: block;
   margin-top: 12px;
 }
-
-#balance h2{
-  color: #333;
+#balance h3{
+  color: #666;
 }
-
 .balance-title {
-  color: #333;
+  text-align: left;
 }
-
 .balance-dollar {
   color: #333;
+  text-align: left;
 }
-
-.balance-dollar i {
-  color: #235594;
-}
-
 .balance-nigiri {
   color: #333;
+  text-align: left;
 }
 
-.balance-nigiri i {
-  color: #355945;
+@media (max-width: 768px) {
+  .balance-title {
+    color: #333;
+    text-align: center;
+  }
+  .balance-dollar {
+    color: #333;
+    text-align: center;
+  }
+  .balance-nigiri {
+    color: #333;
+    text-align: center;
+  }
 }
-
 
 /*
 ** Add Credit section
@@ -441,12 +451,14 @@ h1 {
   margin: 1px 0px;
   padding-left: 3%;
 }
+
 .card-form input[type="text"]{
   display: block;
   height: 50px;
   width: 97%;
   border: none;
 }
+
 .card-form input[type="submit"]{
   display: block;
   height: 60px;
@@ -461,15 +473,18 @@ h1 {
   font-weight: bold;
   cursor: pointer;
 }
+
 .card-form input[type="submit"]:hover{
   background-color: #99e3e4;
   transition: 0.3s ease;
 }
+
 #column-left {
   width: 46.8%;
   float: left;
   margin-bottom: 2px;
 }
+
 #column-right {
   width: 46.8%;
   float: right;

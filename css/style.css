@@ -55,7 +55,7 @@ h1 {
 
 #header h1 {
   position: relative;
-  font-size: 48px;
+  font-size: 42px;
   float: left;
 }
 
@@ -90,7 +90,7 @@ h1 {
   font-size: 25px;
   color: #818181;
   display: block;
-  transition: 0.3s
+  transition: 0.3s;
 }
 
 .sidenav a:hover,
@@ -109,6 +109,20 @@ h1 {
 .logout {
   margin-top: 16px;
   font-size: 36px;
+}
+
+/*
+** Upcoming Meal section
+** -----------------------------------------------------------------------------
+*/
+
+#upcoming {
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+}
+
+#upcoming span {
+  margin-left: 12px;
 }
 
 /*
@@ -374,29 +388,25 @@ h1 {
   z-index: -1;
 }
 
+.card-form {
+  position: relative;
+  z-index: -1;
+}
 
-
-
-input {
+.card-form input {
   margin: 1px 0px;
   padding-left: 3%;
 }
-input[type="text"]{
+.card-form input[type="text"]{
   display: block;
   height: 50px;
   width: 97%;
   border: none;
 }
-input[type="email"]{
-  display: block;
-  height: 50px;
-  width: 97%;
-  border: none;
-}
-input[type="submit"]{
+.card-form input[type="submit"]{
   display: block;
   height: 60px;
-  width: 242px;
+  width: 100%;
   border: none;
   background-color: #01babc;
   color: #eee;
@@ -407,7 +417,7 @@ input[type="submit"]{
   font-weight: bold;
   cursor: pointer;
 }
-input[type="submit"]:hover{
+.card-form input[type="submit"]:hover{
   background-color: #99e3e4;
   transition: 0.3s ease;
 }

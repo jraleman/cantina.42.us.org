@@ -38,9 +38,9 @@
     <header>
       <div id="menuNav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#credit" class="scrollToSection">Add Credit</a>
-        <a href="#history" class="scrollToSection">Payment History</a>
-        <a href="#meals" class="scrollToSection">Eaten Meals</a>
+        <a href="#credit">Add Credit</a>
+        <a href="#payment">Payment History</a>
+        <a href="#meals">Eaten Meals</a>
         <a href="index.html" class="logout">
           <i class="fas fa-sign-out-alt"></i> Log out
         </a>
@@ -60,9 +60,27 @@
     <span><strong>Pasta a la Pingatare</strong> (17:00 - 19:00)</span>
   </section>
 
+  <!-- Balance section
+  ==================== -->
+  <section id="balance">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 balance-title">
+          Your Balance
+        </div>
+        <div class="col-md-4 col-sm-12 balance-dollar">
+          <i class="fas fa-money-bill-alt"></i> 420.69 (dollars)
+        </div>
+        <div class="col-md-4 col-sm-12 balance-nigiri">
+          <i class="fas fa-caret-up"></i> 1337 (nigiri)
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Add Credit section
   ======================= -->
-  <section id="credit">
+  <section id="credit" class="page">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -88,29 +106,9 @@
     </div>
   </section>
 
-  <!-- Balance section
-  ==================== -->
-  <section id="balance">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 balance-title">
-          Your Balance
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 col-sm-12 balance-dollar">
-          <i class="fas fa-money-bill-alt"></i> 420.69 (dollars)
-        </div>
-        <div class="col-md-3 col-sm-12 balance-nigiri">
-          <i class="fas fa-caret-up"></i> 1337 (nigiri)
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Payment History section
   ============================ -->
-  <section id="payment">
+  <section id="payment" class="page">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -176,7 +174,7 @@
 
   <!-- Eaten Meals section
   ======================== -->
-  <section id="meals">
+  <section id="meals" class="page">
     <div class="container">
       <div class="row">
         <div class="col-md-12">

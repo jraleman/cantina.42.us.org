@@ -376,6 +376,7 @@ h1 {
 */
 
 #balance {
+  display: block;
   margin-top: 12px;
 }
 
@@ -408,6 +409,14 @@ h1 {
 ** Add Credit section
 ** -----------------------------------------------------------------------------
 */
+
+#credit {
+  display: none;
+}
+
+#credit:target {
+  display: block;
+}
 
 #credit h2 {
   color: #01babc;
@@ -471,6 +480,14 @@ h1 {
 ** -----------------------------------------------------------------------------
 */
 
+#payment {
+  display: none;
+}
+
+#payment:target {
+  display: block;
+}
+
 #payment h2 {
   color: #01babc;
   font-size: 36px;
@@ -489,6 +506,14 @@ h1 {
 ** Eaten Meals section
 ** -----------------------------------------------------------------------------
 */
+
+#meals {
+  display: none;
+}
+
+#meals:target {
+  display: block;
+}
 
 #meals h2 {
   color: #01babc;

@@ -63,9 +63,13 @@
   <section id="balance">
     <div class="container text-center">
       <div class="row">
-        <h2>Your Balance : </h2>
-        $ 420.69
-        Nigiri  -
+        <span class="balance-title">Your Balance : </span>
+        <span class="balance-dollar">Dollars
+          <i class="fas fa-money-bill-alt"></i> 420.69
+        </span>
+        <span class="balance-nigiri">Nigiri
+          <i class="fas fa-caret-up"></i> 1337
+        </span>
       </div>
     </div>
   </section>
@@ -89,7 +93,7 @@
             <input id="input-field" type="text" name="number" placeholder="Card Number"/>
             <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
             <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
-            <input id="input-button" type="submit" value="Submit"/>
+            <input id="input-button" type="submit" value="Add Credit"/>
           </form>
         </div>
       </div>

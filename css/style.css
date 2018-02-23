@@ -370,13 +370,37 @@ h1 {
 }
 
 /*
+** Balance section
+** -----------------------------------------------------------------------------
+*/
+
+#balance {
+
+}
+
+.balance-title {
+  color: #333;
+  margin-right: 24px;
+}
+
+.balance-dollar {
+  color: #333;
+  margin-right: 6px;
+}
+
+.balance-nigiri {
+  color: #333;
+  margin-left: 6px;
+}
+
+/*
 ** Add Credit section
 ** -----------------------------------------------------------------------------
 */
 
 #credit h2 {
   color: #01babc;
-  font-size: 48px;
+  font-size: 36px;
   font-family: 'Satisfy', sans-serif;
   font-weight: 300;
   margin-top: 24px;
@@ -385,12 +409,12 @@ h1 {
 .card-wrapper {
   margin-top: 12px;
   position: relative;
-  z-index: -1;
+
 }
 
 .card-form {
   position: relative;
-  z-index: -1;
+
 }
 
 .card-form input {
@@ -438,7 +462,7 @@ h1 {
 
 #payment h2 {
   color: #01babc;
-  font-size: 48px;
+  font-size: 36px;
   font-family: 'Satisfy', sans-serif;
   font-weight: 300;
   margin-top: 24px;
@@ -457,7 +481,7 @@ h1 {
 
 #meals h2 {
   color: #01babc;
-  font-size: 48px;
+  font-size: 36px;
   font-family: 'Satisfy', sans-serif;
   font-weight: 300;
   margin-top: 24px;

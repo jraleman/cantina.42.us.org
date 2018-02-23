@@ -35,7 +35,7 @@
   <!-- Header + NavMenu
   ===================== -->
   <header id="header">
-    <div id="menuNav" class="sidenav ">
+    <div id="menuNav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="#credit" class="scrollToSection">Add Credit</a>
       <a href="#history" class="scrollToSection">Payment History</a>
@@ -63,7 +63,9 @@
   <section id="credit">
     <div class="container">
       <div class="row">
-        <h2>Add Credit</h2>
+        <div class="col-md-12">
+          <h2>Add Credit</h2>
+        </div>
       </div>
       <div class="row">
         <!-- Card wrapper -->
@@ -89,6 +91,11 @@
   <section id="balance">
     <div class="container text-center">
       <div class="row">
+        <div class="col-md-6 col-sm-12 balance-title">
+          Your Balance
+        </div>
+      </div>
+      <div class="row">
         <div class="col-md-3 col-sm-12 balance-dollar">
           <i class="fas fa-money-bill-alt"></i> 420.69 (dollars)
         </div>
@@ -104,15 +111,17 @@
   <section id="payment">
     <div class="container">
       <div class="row">
-        <h2>Payment History</h2>
+        <div class="col-md-12">
+          <h2>Payment History</h2>
+        </div>
       </div>
       <!-- Payment table -->
       <div class="row">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12">
+            <div class="col-md-12">
               <div class="table-responsive payment-table">
-                <table class="table table-bordered table-hover payment-table" summary="Payment history table" width="100%">
+                <table class="table table-bordered table-hover table-striped payment-table" summary="Payment history table" width="100%">
                   <!-- <caption class="text-center">An example of a responsive table based on </caption> -->
                   <!-- Table Head -->
                   <thead>
@@ -125,10 +134,25 @@
                   </thead>
                   <!-- Table Body -->
                   <tbody>
+                    <!-- #1 -->
                     <tr>
                       <td>1</td>
-                      <td>25 Dec (Monday) 2018</td>
+                      <td>25 Dec 2018 (Monday)</td>
                       <td>14:42</td>
+                      <td>$6</td>
+                    </tr>
+                    <!-- #2 -->
+                    <tr>
+                      <td>2</td>
+                      <td>12 Jan 2019 (Wednesday)</td>
+                      <td>07:42</td>
+                      <td>$6</td>
+                    </tr>
+                    <!-- #3 -->
+                    <tr>
+                      <td>3</td>
+                      <td>04 Feb 2019 (Friday)</td>
+                      <td>17:42</td>
                       <td>$6</td>
                     </tr>
                   </tbody>
@@ -153,14 +177,17 @@
   <section id="meals">
     <div class="container">
       <div class="row">
-        <h2>Eaten Meals</h2>
+        <div class="col-md-12">
+          <h2>Eaten Meals</h2>
+        </div>
       </div>
       <!-- Meals table -->
       <div class="row">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12">
-              <table class="table table-bordered table-hover payment-table" summary="Eaten meals table" width="100%">
+            <div class="col-md-12">
+              <table class="table table-bordered table-hover table-striped payment-table" summary="Eaten meals table" width="100%">
+                <!-- Table Head -->
                 <thead>
                   <tr>
                     <th>#</th>
@@ -172,11 +199,28 @@
                 </thead>
                 <!-- Table Body -->
                 <tbody>
+                  <!-- #1 -->
                   <tr>
                     <td>1</td>
-                    <td>25 Dec (Monday) 2018</td>
+                    <td>25 Dec 2018 (Monday)</td>
                     <td>14:42</td>
                     <td>Burger with "Special" Mushrooms</td>
+                    <td>$6</td>
+                  </tr>
+                  <!-- #2 -->
+                  <tr>
+                    <td>2</td>
+                    <td>12 Jan 2019 (Wednesday)</td>
+                    <td>07:42</td>
+                    <td>Pancakes with Waffles</td>
+                    <td>$4</td>
+                  </tr>
+                  <!-- #3 -->
+                  <tr>
+                    <td>3</td>
+                    <td>04 Feb 2019 (Friday)</td>
+                    <td>17:42</td>
+                    <td>Pasta a la Pingatare</td>
                     <td>$6</td>
                   </tr>
                 </tbody>

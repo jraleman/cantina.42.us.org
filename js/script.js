@@ -93,3 +93,18 @@ var card = new Card({
   },
   debug: false
 });
+
+/*
+** Dashboard misc functions
+** .............................................................................
+*/
+
+function showSection() {
+  document.getElementById("credit").style.display = "block";
+  return ;
+}
+
+function hideSection() {
+  document.getElementById("credit").style.display = "none";
+  return ;
+}

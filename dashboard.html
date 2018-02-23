@@ -74,6 +74,7 @@
       <div class="row">
         <div class='card-wrapper'></div>
         <form>
+          <input id="input-field" type="text" name="amount" placeholder="Amount ($)"/>
           <input id="input-field" type="text" name="number" placeholder="Card Number"/>
           <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
           <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
@@ -85,14 +86,49 @@
 
   <!-- Payment History section
   ============================ -->
-  <section id="history">
+  <section id="payment">
     <div class="container">
       <div class="row">
         <h2>Payment History</h2>
       </div>
       <!-- Payment table -->
       <div class="row">
-
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="table-responsive payment-table">
+                <table class="table table-bordered table-hover payment-table" summary="Payment history table" width="100%">
+                  <!-- <caption class="text-center">An example of a responsive table based on </caption> -->
+                  <!-- Table Head -->
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Date</th>
+                      <th>Time</th>
+                      <th>Amount</th>
+                    </tr>
+                  </thead>
+                  <!-- Table Body -->
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>25 Dec (Monday) 2018</td>
+                      <td>14:42</td>
+                      <td>$6</td>
+                    </tr>
+                  </tbody>
+                  <!--
+                  <tfoot>
+                    <tr>
+                      <td colspan="5" class="text-center">Data retrieved from <a href="http://www.infoplease.com/ipa/A0855611.html" target="_blank">infoplease</a> and <a href="http://www.worldometers.info/world-population/population-by-country/" target="_blank">worldometers</a>.</td>
+                    </tr>
+                  </tfoot>
+                  -->
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -104,6 +140,16 @@
       <div class="row">
         <h2>Eaten Meals</h2>
       </div>
+      <!-- Meals table -->
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+
+            </div>
+          </div>
+        </div>
+
     </div>
   </section>
 

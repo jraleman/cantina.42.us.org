@@ -421,24 +421,23 @@ input[type="submit"]:hover{
   float: right;
 }
 
-
-
-
-
-
-
-
 /*
 ** Payment History section
 ** -----------------------------------------------------------------------------
 */
 
-#history h2 {
+#payment h2 {
   color: #01babc;
   font-size: 48px;
   font-family: 'Satisfy', sans-serif;
   font-weight: 300;
   margin-top: 24px;
+}
+
+.payment-table {
+  margin-top: 12px;
+  color: #666;
+  width: 100%
 }
 
 /*

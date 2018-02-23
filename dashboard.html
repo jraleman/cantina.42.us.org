@@ -35,7 +35,7 @@
   <!-- Header + NavMenu
   ===================== -->
   <header id="header">
-    <div id="menuNav" class="sidenav">
+    <div id="menuNav" class="sidenav ">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="#credit" class="scrollToSection">Add Credit</a>
       <a href="#history" class="scrollToSection">Payment History</a>
@@ -56,22 +56,6 @@
   <section id="upcoming" class="alert alert-info">
     <i class="fas fa-info-circle"></i> Upcoming meal :
     <span><strong>Pasta a la Pingatare</strong> (17:00 - 19:00)</span>
-  </section>
-
-  <!-- Balance section
-  ==================== -->
-  <section id="balance">
-    <div class="container text-center">
-      <div class="row">
-        <span class="balance-title">Your Balance : </span>
-        <span class="balance-dollar">Dollars
-          <i class="fas fa-money-bill-alt"></i> 420.69
-        </span>
-        <span class="balance-nigiri">Nigiri
-          <i class="fas fa-caret-up"></i> 1337
-        </span>
-      </div>
-    </div>
   </section>
 
   <!-- Add Credit section
@@ -95,6 +79,21 @@
             <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
             <input id="input-button" type="submit" value="Add Credit"/>
           </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Balance section
+  ==================== -->
+  <section id="balance">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 balance-dollar">
+          <i class="fas fa-money-bill-alt"></i> 420.69 (dollar)
+        </div>
+        <div class="col-md-4 col-sm-12 balance-nigiri">
+          <i class="fas fa-caret-up"></i> 1337 (nigiri)
         </div>
       </div>
     </div>

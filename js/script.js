@@ -23,6 +23,7 @@ var stateNav = false;
 // Close the menu.
 function closeNav() {
   stateNav = false;
+  $("#menuNav a").hide(400);
   document.getElementById("menuNav").style.width = "0";
   return ;
 }
@@ -30,6 +31,7 @@ function closeNav() {
 // Open the menu.
 function openNav() {
   stateNav = true;
+  $("#menuNav a").show(400);
   document.getElementById("menuNav").style.width = "250px";
   return ;
 }

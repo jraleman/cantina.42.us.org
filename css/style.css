@@ -125,7 +125,7 @@ h1 {
 
 #banner {
   width: 100%;
-  min-height: 666px;
+  min-height: 520px;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -148,7 +148,7 @@ h1 {
 .logo {
   width: 242px;
   height: auto;
-  margin-top: 21px;
+  margin-top: 42px;
 }
 
 /*
@@ -370,6 +370,12 @@ h1 {
   text-align: left;
   font-family: 'PT Sans', sans-serif;
 }
+/* .balance-dollar i {
+  color: #;
+}
+.balance-nigiri i {
+  color: #;
+} */
 
 @media (max-width: 768px) {
   .balance-title {

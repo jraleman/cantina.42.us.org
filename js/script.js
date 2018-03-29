@@ -17,28 +17,45 @@ new WOW({
 ** .............................................................................
 */
 
-var menuOpen;
+// Flag to indicate if the menu is open or close.
+var stateNav = false;
 
+// Close the menu.
 function closeNav() {
+  stateNav = false;
   document.getElementById("menuNav").style.width = "0";
-  return (false);
+  return ;
 }
 
+// Open the menu.
 function openNav() {
+  stateNav = true;
   document.getElementById("menuNav").style.width = "250px";
-  return (true);
+  return ;
 }
 
-// Close the menu if the user tap or click outside the menu.
-document.getElementById('dashboard').onclick = function(e) {
-  if (menuOpen == true && e.target != document.getElementById('menuNav')) {
-    menuOpen = closeNav();
-  }
-  else {
-    menuOpen = openNav();
-  }
-  return (menuOpen);
+// Toggle the menu.
+function toggleNav() {
+  stateNav == false ? openNav() : closeNav()
+  return ;
 }
+
+//Close the menu if the user tap or click outside of it.
+
+// document.getElementById('dashboard').onclick = function(e) {
+//   if (e.target != document.getElementById('menuNav')) {
+//     closeNav();
+//   }
+//   else if (e.target == document.getElementById('menuIcon') && stateNav === false)
+//     openNav();
+//   return ;
+// }
+//
+// $(document).click(function(event) {
+//     console.log(event.target);
+//     console.log($(event.target));
+// });
+
 
 /*
 ** Carte (food menu) filter function(s)

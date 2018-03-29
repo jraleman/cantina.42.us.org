@@ -17,14 +17,27 @@ new WOW({
 ** .............................................................................
 */
 
+var menuOpen;
+
 function closeNav() {
   document.getElementById("menuNav").style.width = "0";
-  return ;
+  return (false);
 }
 
 function openNav() {
   document.getElementById("menuNav").style.width = "250px";
-  return ;
+  return (true);
+}
+
+// Close the menu if the user tap or click outside the menu.
+document.getElementById('dashboard').onclick = function(e) {
+  if (menuOpen == true && e.target != document.getElementById('menuNav')) {
+    menuOpen = closeNav();
+  }
+  else {
+    menuOpen = openNav();
+  }
+  return (menuOpen);
 }
 
 /*

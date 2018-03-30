@@ -1,4 +1,21 @@
 /*
+** Dashboard misc functions
+** .............................................................................
+*/
+
+// Shows a section.
+function showSection(id) {
+  document.getElementById(id).style.display = "block";
+  return ;
+}
+
+// Hides a section.
+function hideSection(id) {
+  document.getElementById(id).style.display = "none";
+  return ;
+}
+
+/*
 ** Init WOW.js
 ** .............................................................................
 */
@@ -119,16 +136,12 @@ var card = new Card({
 });
 
 /*
-** Dashboard misc functions
+** Credit section functions
 ** .............................................................................
 */
 
-function showSection() {
-  document.getElementById("credit").style.display = "block";
-  return ;
-}
-
-function hideSection() {
-  document.getElementById("credit").style.display = "none";
-  return ;
+document.onreadystatechange = function () {
+  if (document.readyState == "complete") {
+    window.location.hash = "credit";
+   }
 }

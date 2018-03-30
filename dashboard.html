@@ -30,7 +30,7 @@
   <script defer src="js/fontawesome-all.min.js"></script>
 </head>
 
-<body id="dashboard">
+<body>
 
   <!-- Header + NavMenu
   ===================== -->
@@ -54,86 +54,156 @@
     </header>
   </section>
 
-  <!-- Upcoming Meal section
+  <!-- Dashboard division
   ========================== -->
-  <section id="upcoming" class="alert alert-info">
-    <i class="fas fa-info-circle"></i> Upcoming meal :
-    <span><strong>Pasta a la Pingatare</strong> (17:00 - 19:00)</span>
-  </section>
+  <div id="dashboard">
 
-  <!-- Balance section
-  ==================== -->
-  <section id="balance">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-md-4 col-sm-12 balance-title">
-          <h3>Your Balance</h3>
-        </div>
-        <div class="col-md-4 col-sm-12 balance-dollar">
-          <i class="fas fa-money-bill-alt"></i> 420.69 (dollars)
-        </div>
-        <div class="col-md-4 col-sm-12 balance-nigiri">
-          <i class="fas fa-caret-up"></i> 1337 (nigiri)
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Upcoming Meal section
+    ========================== -->
+    <section id="upcoming" class="alert alert-info">
+      <i class="fas fa-info-circle"></i> Upcoming meal :
+      <span><strong>Pasta a la Pingatare</strong> (17:00 - 19:00)</span>
+    </section>
 
-  <!-- Add Credit section
-  ======================= -->
-  <section id="credit" class="page wow fadeIn">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Add Credit</h2>
+    <!-- Balance section
+    ==================== -->
+    <section id="balance">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 balance-title">
+            <h3>Your Balance</h3>
+          </div>
+          <div class="col-md-4 col-sm-12 balance-dollar">
+            <i class="fas fa-money-bill-alt"></i> 420.69 (dollars)
+          </div>
+          <div class="col-md-4 col-sm-12 balance-nigiri">
+            <i class="fas fa-caret-up"></i> 1337 (nigiri)
+          </div>
         </div>
       </div>
-      <div class="row">
-        <!-- Card wrapper -->
-        <div class="col-md-6 col-sm-12">
-          <div class='card-wrapper'></div>
-        </div>
-        <!-- Credit card form -->
-        <div class="col-md-6 col-sm-12">
-          <form class="card-form">
-            <input id="input-field" type="text" name="amount" placeholder="Amount ($)"/>
-            <input id="input-field" type="text" name="number" placeholder="Card Number"/>
-            <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
-            <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
-            <input id="input-button" type="submit" value="Add Credit"/>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Payment History section
-  ============================ -->
-  <section id="payment" class="page wow fadeIn">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Payment History</h2>
+    <!-- Add Credit section
+    ======================= -->
+    <section id="credit" class="page wow fadeIn">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Add Credit</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Card wrapper -->
+          <div class="col-md-6 col-sm-12">
+            <div class='card-wrapper'></div>
+          </div>
+          <!-- Credit card form -->
+          <div class="col-md-6 col-sm-12">
+            <form class="card-form">
+              <input id="input-field" type="text" name="amount" placeholder="Amount ($)"/>
+              <input id="input-field" type="text" name="number" placeholder="Card Number"/>
+              <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
+              <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
+              <input id="input-button" type="submit" value="Add Credit"/>
+            </form>
+          </div>
         </div>
       </div>
-      <!-- Payment table -->
-      <div class="row">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="table-responsive payment-table">
-                <table class="table table-bordered table-hover table-striped payment-table"
-                  summary="Payment history table" width="100%">
-                  <!--
-                    <caption class="text-center">An example of a responsive table based on </caption>
-                   -->
+    </section>
+
+    <!-- Payment History section
+    ============================ -->
+    <section id="payment" class="page wow fadeIn">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Payment History</h2>
+          </div>
+        </div>
+        <!-- Payment table -->
+        <div class="row">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="table-responsive payment-table">
+                  <table class="table table-bordered table-hover table-striped payment-table"
+                    summary="Payment history table" width="100%">
+                    <!--
+                      <caption class="text-center">An example of a responsive table based on </caption>
+                     -->
+                    <!-- Table Head -->
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Amount</th>
+                      </tr>
+                    </thead>
+                    <!-- Table Body -->
+                    <tbody>
+                      <!-- #1 -->
+                      <tr>
+                        <td>1</td>
+                        <td>25 Dec 2018 (Monday)</td>
+                        <td>14:42</td>
+                        <td>$6</td>
+                      </tr>
+                      <!-- #2 -->
+                      <tr>
+                        <td>2</td>
+                        <td>12 Jan 2019 (Wednesday)</td>
+                        <td>07:42</td>
+                        <td>$6</td>
+                      </tr>
+                      <!-- #3 -->
+                      <tr>
+                        <td>3</td>
+                        <td>04 Feb 2019 (Friday)</td>
+                        <td>17:42</td>
+                        <td>$6</td>
+                      </tr>
+                    </tbody>
+                    <!--
+                    <tfoot>
+                      <tr>
+                        <td colspan="5" class="text-center">Data retrieved from <a href="http://www.infoplease.com/ipa/A0855611.html" target="_blank">infoplease</a> and <a href="http://www.worldometers.info/world-population/population-by-country/" target="_blank">worldometers</a>.</td>
+                      </tr>
+                    </tfoot>
+                    -->
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eaten Meals section
+    ======================== -->
+    <section id="meals" class="page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Eaten Meals</h2>
+          </div>
+        </div>
+        <!-- Meals table -->
+        <div class="row">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <table class="table table-bordered table-hover table-striped meals-table"
+                  summary="Eaten meals table" width="100%">
                   <!-- Table Head -->
                   <thead>
                     <tr>
                       <th>#</th>
                       <th>Date</th>
                       <th>Time</th>
-                      <th>Amount</th>
+                      <th>Menu</th>
+                      <th>Price</th>
                     </tr>
                   </thead>
                   <!-- Table Body -->
@@ -143,6 +213,7 @@
                       <td>1</td>
                       <td>25 Dec 2018 (Monday)</td>
                       <td>14:42</td>
+                      <td>Burger with "Special" Mushrooms</td>
                       <td>$6</td>
                     </tr>
                     <!-- #2 -->
@@ -150,92 +221,27 @@
                       <td>2</td>
                       <td>12 Jan 2019 (Wednesday)</td>
                       <td>07:42</td>
-                      <td>$6</td>
+                      <td>Pancakes with Waffles</td>
+                      <td>$4</td>
                     </tr>
                     <!-- #3 -->
                     <tr>
                       <td>3</td>
                       <td>04 Feb 2019 (Friday)</td>
                       <td>17:42</td>
+                      <td>Pasta a la Pingatare</td>
                       <td>$6</td>
                     </tr>
                   </tbody>
-                  <!--
-                  <tfoot>
-                    <tr>
-                      <td colspan="5" class="text-center">Data retrieved from <a href="http://www.infoplease.com/ipa/A0855611.html" target="_blank">infoplease</a> and <a href="http://www.worldometers.info/world-population/population-by-country/" target="_blank">worldometers</a>.</td>
-                    </tr>
-                  </tfoot>
-                  -->
                 </table>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Eaten Meals section
-  ======================== -->
-  <section id="meals" class="page">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Eaten Meals</h2>
-        </div>
       </div>
-      <!-- Meals table -->
-      <div class="row">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <table class="table table-bordered table-hover table-striped meals-table"
-                summary="Eaten meals table" width="100%">
-                <!-- Table Head -->
-                <thead>
-                  <tr>
-                    <th>#</th>
-                    <th>Date</th>
-                    <th>Time</th>
-                    <th>Menu</th>
-                    <th>Price</th>
-                  </tr>
-                </thead>
-                <!-- Table Body -->
-                <tbody>
-                  <!-- #1 -->
-                  <tr>
-                    <td>1</td>
-                    <td>25 Dec 2018 (Monday)</td>
-                    <td>14:42</td>
-                    <td>Burger with "Special" Mushrooms</td>
-                    <td>$6</td>
-                  </tr>
-                  <!-- #2 -->
-                  <tr>
-                    <td>2</td>
-                    <td>12 Jan 2019 (Wednesday)</td>
-                    <td>07:42</td>
-                    <td>Pancakes with Waffles</td>
-                    <td>$4</td>
-                  </tr>
-                  <!-- #3 -->
-                  <tr>
-                    <td>3</td>
-                    <td>04 Feb 2019 (Friday)</td>
-                    <td>17:42</td>
-                    <td>Pasta a la Pingatare</td>
-                    <td>$6</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
+    </section>
 
-    </div>
-  </section>
+  </div>
 
   <!-- JavaScript files
   ===================== -->

@@ -13,14 +13,14 @@ new WOW({
 
 
 /*
-** Navbar function(s)
+** Navbar menu function(s)
 ** .............................................................................
 */
 
-// Flag to indicate if the menu is open or close.
+// Flag to indicate if the navigation menu is open or close.
 var stateNav = false;
 
-// Close the menu.
+// Close the navigation menu.
 function closeNav() {
   stateNav = false;
   $("#menuNav a").hide(400);
@@ -28,7 +28,7 @@ function closeNav() {
   return ;
 }
 
-// Open the menu.
+// Open the navigation menu.
 function openNav() {
   stateNav = true;
   $("#menuNav a").show(400);
@@ -36,28 +36,20 @@ function openNav() {
   return ;
 }
 
-// Toggle the menu.
+// Toggle the navigation menu.
 function toggleNav() {
   stateNav == false ? openNav() : closeNav()
   return ;
 }
 
-//Close the menu if the user tap or click outside of it.
-
-// document.getElementById('dashboard').onclick = function(e) {
-//   if (e.target != document.getElementById('menuNav')) {
-//     closeNav();
-//   }
-//   else if (e.target == document.getElementById('menuIcon') && stateNav === false)
-//     openNav();
-//   return ;
-// }
-//
-// $(document).click(function(event) {
-//     console.log(event.target);
-//     console.log($(event.target));
-// });
-
+// Close the menu if the use clicks outside the navigation.
+// UX is important afterall... :)
+$("#dashboard").on("click",function(e){
+  if (stateNav == true) {
+    closeNav();
+  }
+  return ;
+});
 
 /*
 ** Carte (food menu) filter function(s)

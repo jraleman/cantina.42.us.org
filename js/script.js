@@ -143,6 +143,7 @@ var card = new Card({
 document.onreadystatechange = function () {
   if (document.readyState == "complete") {
     window.location.hash = "credit";
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
     $("#dashboard").show(500);
    }
 }

@@ -143,5 +143,6 @@ var card = new Card({
 document.onreadystatechange = function () {
   if (document.readyState == "complete") {
     window.location.hash = "credit";
+    $("#dashboard").show(500);
    }
 }

@@ -15,7 +15,7 @@
 
 ![#01babc](http://via.placeholder.com/150/01babc/000000?text=action)
 ![#80dcdd](http://via.placeholder.com/150/80dcdd/000000?text=highlight)
-![#222222](http://via.placeholder.com/150/222222/000000?text=darkish)
+![#222222](http://via.placeholder.com/150/222222/ffffff?text=darkish)
 ![#eeeeee](http://via.placeholder.com/150/eeeeee/000000?text=lightish)
 
 ## Easter Eggs

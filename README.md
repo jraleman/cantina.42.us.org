@@ -4,12 +4,18 @@
 
 ## TODO
 
+- Add modal for login
+- Add rules (done)
+- Change spacing
+- Change faq format
+- Try using onclick='function(this.id);'
+--------------------------------------------------------------------------------
 - Include contact info in the landing page (phone, email, etc...)
-- Add Credit default amount (depending on time and day)
+- Add more FAQs
+- Add credit default amount (depending on time and day)
   - $4 for breakfast (morning)
   - $6 for rest of the meals (afternoon, evening)
   - $5 for brunch (saturday 11am)
-- Add more FAQs
 
 ## Colors
 
@@ -21,6 +27,7 @@
 ## Easter Eggs
 
 - Tap logo to play "una pena..."
+- Long press rules to play title-to-speech meme or ytp or mlg :3
 
 ## Resources
 

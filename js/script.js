@@ -113,7 +113,14 @@ $("#menu-filters li a").click(function() {
 */
 
 $(document).ready(function() {
-  $('.pgwSlider').pgwSlider();
+  // cant find id from dom, do like a validation here...
+  var pgwSlider = $('.pgwSlider').pgwSlider();
+  pgwSlider.displaySlide(3);
+  pgwSlider.reload({
+    maxHeight : 300,
+    intervalDuration : 4000,
+    verticalCentering : true,
+  });
 });
 
 /*

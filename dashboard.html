@@ -58,11 +58,12 @@
   <section id="header">
     <header>
       <div id="menuNav" class="sidenav">
-        <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#credit">Add Credit</a>
-        <a href="#payment">Payment History</a>
-        <a href="#meals">Eaten Meals</a>
-        <a href="index.html" class="logout">
+        <a href="javascript:void(0);" class="closebtn" onclick="closeNav();">&times;</a>
+        <a href="#credit" onclick="toggleSection(this.id, 500);">Add Credit</a>
+        <a href="#payment" onclick="toggleSection(this.id, 500);">Payment History</a>
+        <a href="#meals" onclick="toggleSection(this.id, 500);">Eaten Meals</a>
+        <!-- Logout -->
+        <a href="javascript:void(0);" class="logout" onclick="closeDashboard();">
           <i class="fas fa-sign-out-alt"></i> Log out
         </a>
       </div>

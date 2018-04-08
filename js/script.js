@@ -1,4 +1,16 @@
 /*
+** Landing page misc functions
+** .............................................................................
+*/
+
+$(".scrollToSection").click(function(e) {
+  e.preventDefault();
+  var aid = $(this).attr("href");
+  $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+});
+
+
+/*
 ** Dashboard misc functions
 ** .............................................................................
 */
@@ -38,20 +50,6 @@ function toggleSection(id, time) {
 //   return ;
 // }
 // document.onreadystatechange = loadDashboard();
-
-/*
-** Init WOW.js
-** .............................................................................
-*/
-
-new WOW({
-  boxClass:     'wow',      // default
-  animateClass: 'animated', // default
-  offset:       0,          // default
-  mobile:       false,
-  live:         true        // default
-}).init()
-
 
 /*
 ** Navbar menu function(s)
@@ -106,6 +104,20 @@ $("#menu-filters li a").click(function() {
     $(selectedFilter).slideDown();
   }, 300);
 });
+
+/*
+** Init WOW.js
+** .............................................................................
+*/
+
+new WOW({
+  boxClass:     'wow',      // default
+  animateClass: 'animated', // default
+  offset:       0,          // default
+  mobile:       false,
+  live:         true        // default
+}).init()
+
 
 /*
 ** pgwSlider

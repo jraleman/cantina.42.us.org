@@ -15,6 +15,15 @@ function hideSection(id) {
   return ;
 }
 
+// Changes to section.
+function toggleSection(id, time) {
+  if (typeof time != 'number')
+    console.log("changeSection() : expected a number as transition time.")
+  window.location.hash = id;
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
+  return ;
+}
+
 /*
 ** Init WOW.js
 ** .............................................................................

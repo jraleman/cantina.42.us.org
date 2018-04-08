@@ -179,14 +179,14 @@ var card = new Card({
 });
 
 /*
-** Credit section functions
+** Credit section function(s)
 ** .............................................................................
 */
 
 document.onreadystatechange = function () {
   if (document.readyState == "complete") {
-    window.location.hash = "credit";
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
+    toggleSection('credit', 500);
     $("#dashboard").show(500);
    }
+   return ;
 }

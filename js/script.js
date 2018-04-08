@@ -24,6 +24,21 @@ function toggleSection(id, time) {
   return ;
 }
 
+// // Logout from the dashboard.
+// function closeDashboard() {
+//   // redirect to index.html, for now...
+//   return;
+// }
+//
+// function loadDashboard() {
+//   if (document.readyState == "complete") {
+//     toggleSection('credit', 500);
+//     $("#dashboard").show(500);
+//    }
+//   return ;
+// }
+// document.onreadystatechange = loadDashboard();
+
 /*
 ** Init WOW.js
 ** .............................................................................

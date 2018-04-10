@@ -309,6 +309,26 @@ h1 {
 }
 
 /*
+** Modal
+** -----------------------------------------------------------------------------
+*/
+
+.modal-content {
+  color: #222;
+}
+.modal-header {
+  color: #f9f9f9;
+  background-color: #01BABC;
+}
+.modal-header button span {
+  color: #fff;
+}
+.modal-body img {
+  width: 200px;
+  height: auto;
+}
+
+/*
 ** FAQ section
 ** -----------------------------------------------------------------------------
 */

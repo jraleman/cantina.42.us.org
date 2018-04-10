@@ -307,6 +307,32 @@ h1 {
   font-family: 'PT Sans', sans-serif;
   font-style: italic;
 }
+.rules-item {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+.rules-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.rules-item h3 {
+  position: absolute;
+  bottom: 0;
+  background: #222;
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0.9;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.rules-item:hover .overlay {
+  opacity: 0;
+}
 
 /*
 ** Modal

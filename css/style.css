@@ -311,6 +311,9 @@ h1 {
   position: relative;
   width: 100%;
   max-width: 300px;
+  border-color: #01BABC;
+  border-style: groove;
+  border-width: 5px
 }
 .rules-item img {
   display: block;

@@ -129,8 +129,10 @@ $(document).ready(function() {
   var pgwSlider = $('.pgwSlider').pgwSlider();
   pgwSlider.displaySlide(3);
   pgwSlider.reload({
-    maxHeight : 300,
-    intervalDuration : 4000,
+    selectionMode     : 'mouseOver',
+    touchControls     : true,
+    maxHeight         : 600,
+    intervalDuration  : 4000,
     verticalCentering : true,
   });
 });

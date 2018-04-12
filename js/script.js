@@ -9,15 +9,6 @@ $(".scrollToSection").click(function(e) {
   $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
 });
 
-function playAudio(id) {
-  if (id == '#logo') {
-    //play audio file
-    alert('Una pena...');
-  }
-  return ;
-}
-
-
 /*
 ** Dashboard misc functions
 ** .............................................................................
@@ -200,3 +191,14 @@ document.onreadystatechange = function () {
    }
    return ;
 }
+
+/*
+** Easter eggs!
+** .............................................................................
+*/
+
+$(document).ready(function() {
+  cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
+    alert('Konami code');
+  });
+});

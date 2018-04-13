@@ -126,6 +126,7 @@ h1 {
 #banner {
   width: 100%;
   min-height: 520px;
+  margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -310,10 +311,10 @@ h1 {
 .rules-item {
   position: relative;
   width: 100%;
-  max-width: 300px;
   border-color: #01BABC;
   border-style: groove;
-  border-width: 5px
+  border-width: 5px;
+  text-align: center;
 }
 .rules-item img {
   display: block;

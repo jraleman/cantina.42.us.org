@@ -34,7 +34,10 @@ h1 {
   font-size: 72px;
   padding-top: 21px;
 }
-
+section {
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
 /*
 ** Header + NavMenu
 ** -----------------------------------------------------------------------------

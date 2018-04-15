@@ -26,8 +26,8 @@
 
 ## Easter Eggs
 
-- Tap logo to play "una pena..."
-- Long press rules to play title-to-speech meme or ytp or mlg :3
+- Tap logo to play "una pena..." audio.
+- Type the Konami code to play Austin Powers' theme song.
 
 ## Dependencies
 

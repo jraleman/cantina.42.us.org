@@ -205,8 +205,19 @@ document.onreadystatechange = function () {
 ** .............................................................................
 */
 
+function playAudio(path) {
+  var audio;
+
+  audio = document.createElement('audio')
+  audio.src = path;
+  audio.play();
+  return ;
+}
+
 $(document).ready(function() {
   cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
-    alert('Konami code');
+    playAudio('audio/soul-bossa-nova.mp3');
+    alert('Konami code!');
+    return ;
   });
 });

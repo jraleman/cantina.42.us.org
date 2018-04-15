@@ -124,16 +124,20 @@ new WOW({
 */
 
 $(document).ready(function() {
-  // cant find id from dom, do like a validation here...
-  var pgwSlider = $('.pgwSlider').pgwSlider();
-  pgwSlider.displaySlide(3);
-  pgwSlider.reload({
-    selectionMode     : 'mouseOver',
-    touchControls     : true,
-    maxHeight         : 600,
-    intervalDuration  : 4000,
-    verticalCentering : true,
-  });
+  try {
+    var pgwSlider = $('.pgwSlider').pgwSlider();
+    pgwSlider.displaySlide(3);
+    pgwSlider.reload({
+      selectionMode     : 'mouseOver',
+      touchControls     : true,
+      maxHeight         : 600,
+      intervalDuration  : 4000,
+      verticalCentering : true,
+    });
+  }
+  catch(err) {
+    console.log(err.message);
+  }
 });
 
 /*

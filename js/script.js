@@ -136,7 +136,7 @@ $(document).ready(function() {
     });
   }
   catch(err) {
-    console.log(err.message);
+    console.log("Error: " + err.message);
   }
 });
 
@@ -185,7 +185,7 @@ try {
   });
 }
 catch(err) {
-  console.log(err.message);
+  console.log("Error: " + err.message);
 }
 /*
 ** Credit section function(s)
@@ -215,9 +215,14 @@ function playAudio(path) {
 }
 
 $(document).ready(function() {
-  cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
-    playAudio('audio/soul-bossa-nova.mp3');
-    alert('Konami code!');
-    return ;
-  });
+  try {
+    cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
+      playAudio('audio/soul-bossa-nova.mp3');
+      alert('Konami code!');
+      return ;
+    });
+  }
+  catch(err) {
+    console.log("Error: " + err.message);
+  }
 });

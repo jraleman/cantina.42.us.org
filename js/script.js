@@ -35,12 +35,12 @@ function toggleSection(id, time) {
   return ;
 }
 
-// // Logout from the dashboard.
-// function closeDashboard() {
-//   // redirect to index.html, for now...
-//   return;
-// }
-//
+// Logout from the dashboard.
+function closeDashboard() {
+  window.location.href = 'index.html';
+  return;
+}
+
 // function loadDashboard() {
 //   if (document.readyState == "complete") {
 //     toggleSection('credit', 500);

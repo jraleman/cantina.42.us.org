@@ -50,6 +50,8 @@ section {
   position: -webkit-sticky; /* Safari */
   height: 88px;
   z-index: 42;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 #header h1 {
   position: relative;
@@ -112,6 +114,8 @@ section {
   position: sticky;
   position: -webkit-sticky; /* Safari */
   font-family: 'PT Sans', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 @media (max-width: 768px) {

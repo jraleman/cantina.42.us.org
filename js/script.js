@@ -193,7 +193,7 @@ catch(err) {
 */
 
 document.onreadystatechange = function () {
-  if (document.readyState == "complete") {
+  if (document.getElementById('dashboard') && document.readyState == "complete") {
     toggleSection('credit', 500);
     $("#dashboard").show(500);
    }
@@ -208,7 +208,7 @@ document.onreadystatechange = function () {
 function playAudio(path) {
   var audio;
 
-  audio = document.createElement('audio')
+  audio = document.createElement('audio');
   audio.src = path;
   audio.play();
   return ;

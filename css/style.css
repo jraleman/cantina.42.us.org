@@ -438,6 +438,7 @@ section {
   border-width: thin;
   display: block;
   margin-top: 12px;
+  margin-bottom: 0px !important;
 }
 #balance h3{
   color: #666;
@@ -482,6 +483,7 @@ section {
 */
 
 #credit {
+  margin-top: 48px;
   display: none;
 }
 #credit:target {
@@ -549,6 +551,7 @@ section {
 */
 
 #payment {
+  margin-top: 48px;
   display: none;
 }
 #payment:target {
@@ -574,6 +577,7 @@ section {
 */
 
 #meals {
+  margin-top: 48px;
   display: none;
 }
 #meals:target {
@@ -589,7 +593,7 @@ section {
 .meals-table {
   margin-top: 12px;
   color: #666;
-  width: 100%
+  width: 100%;
   font-family: 'PT Sans', sans-serif;
 }
 

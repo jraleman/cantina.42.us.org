@@ -152,33 +152,37 @@ $(".scrollToSection").click(function(e) {
 ** .............................................................................
 */
 
-var card = new Card({
-  form: 'form',
-  container: '.card-wrapper',
-  formSelectors: {
-    numberInput: 'input[name="number"]',
-    expiryInput: 'input[name="expiry"]',
-    cvcInput:  'input[name="cvc"]',
-    nameInput: 'input[name="name"]',
-  },
-  width: 242,
-  formatting: true,
-  messages: {
-    validDate: 'valid\ndate',
-    monthYear: 'mm/yyyy',
-  },
-  placeholders: {
-    number: '•••• •••• •••• ••••',
-    name: '',
-    expiry: '••/••',
-    cvc: '•••'
-  },
-  masks: {
-    cardNumber: '•'
-  },
-  debug: false
-});
-
+try {
+  var card = new Card({
+    form: 'form',
+    container: '.card-wrapper',
+    formSelectors: {
+      numberInput: 'input[name="number"]',
+      expiryInput: 'input[name="expiry"]',
+      cvcInput:  'input[name="cvc"]',
+      nameInput: 'input[name="name"]',
+    },
+    width: 242,
+    formatting: true,
+    messages: {
+      validDate: 'valid\ndate',
+      monthYear: 'mm/yyyy',
+    },
+    placeholders: {
+      number: '•••• •••• •••• ••••',
+      name: '',
+      expiry: '••/••',
+      cvc: '•••'
+    },
+    masks: {
+      cardNumber: '•'
+    },
+    debug: false
+  });
+}
+catch(err) {
+  console.log(err.message);
+}
 /*
 ** Credit section function(s)
 ** .............................................................................

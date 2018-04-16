@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Basic meta info
+  ==================== -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>La Cantina</title>
+
+  <!-- CSS files
+  ============== -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/pgwslider.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+  <!-- Font files
+  =============== -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans" />
+
+  <!-- Favicon(s) files
+  ===================== -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/42/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/42/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/42/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/42/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/42/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/42/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/42/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/42/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/42/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/42/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/cantina/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="images/cantina/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/cantina/favicon-16x16.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="images/favicon/42/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Modernizr file
+  =================== -->
+  <script src="js/modernizr.custom.js" charset="utf-8"></script>
+
+  <!-- FontAwesome
+  ================ -->
+  <script defer src="js/fontawesome-all.min.js"></script>
+</head>
+
+<body>
+  <!-- Banner section
+  =================== -->
+  <section id="banner" data-component="CantinaBanner">
+    <!-- Logo && Login Button -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center wow pulse">
+          <a id="#logo" href="#" onclick="playAudio(this.id);">
+            <img class="logo" src="images/logos/logo-white.svg" alt="cantina-logo" />
+          </a>
+          <h1>La Cantina</h1>
+          <br />
+          <a href="dashboard.html" class="btn" target="_self">
+            <i class="fas fa-sign-in-alt"></i> Log in
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carte (food menu) section
+  ============================== -->
+  <section id="carte" data-component="CantinaCarte">
+    <div class="container wow slideInRight">
+      <div class="row">
+        <!-- Title and description -->
+        <div class="col-md-12 text-center">
+          <h2>Menu</h2>
+          <p>Take a look at our delicious meals!</p>
+        </div>
+        <!-- Filters -->
+        <div class="col-md-12 text-center" id="menu-filters">
+          <ul>
+            <li><a class="filter active" data-filter=".menu-item">Show All</a></li>
+            <li><a class="filter" data-filter=".breakfast">Breakfast</a></li>
+            <li><a class="filter" data-filter=".lunch">Lunch</a></li>
+            <li><a class="filter" data-filter=".dinner">Dinner</a></li>
+          </ul>
+        </div>
+        <!-- Menu -->
+        <div class="col-md-12 text-center" id="menu-wrapper">
+          <!-- Breakfast -->
+          <div class="breakfast menu-item">
+            <span class="clearfix">
+              <span class="menu-title text-left">Pancakes with Waffles</span>
+              <span class="menu-line"></span>
+              <span class="menu-price">$4</span>
+            </span>
+            <span class="menu-subtitle text-left">
+              <strong>Feb 24 -> </strong> 07:00 - 09:00
+            </span>
+          </div>
+          <!-- Lunch -->
+          <div class="lunch menu-item">
+            <span class="clearfix">
+              <span class="menu-title text-left">Burger with "Special" Mushrooms</span>
+              <span class="menu-line"></span>
+              <span class="menu-price">$6</span>
+            </span>
+            <span class="menu-subtitle text-left">
+              <strong>Feb 24 -> </strong> 12:00 - 14:00
+            </span>
+          </div>
+          <!-- Dinner -->
+          <div class="dinner menu-item">
+            <span class="clearfix">
+              <span class="menu-title text-left">Pasta a la Pingatare</span>
+              <span class="menu-line"></span>
+              <span class="menu-price">$6</span>
+            </span>
+            <span class="menu-subtitle text-left">
+              <strong>Feb 24 -> </strong> 17:00 - 19:00
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slideshow section
+  ====================== -->
+  <section id="slideshow" data-component="CantinaSlides">
+    <div class="container wow fadeIn">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="pgwSlider">
+            <li>
+              <img src="images/cantina.jpg">
+              <span>La Cantina</span>
+            </li>
+            <li>
+              <img src="images/meals/breakfast.jpg">
+              <span>Breakfast</span>
+            </li>
+            <li>
+              <img src="images/meals/lunch.jpg">
+              <span>Lunch</span>
+            </li>
+            <li>
+              <img src="images/meals/dinner.jpg">
+              <span>Dinner</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rules section
+  ==================== -->
+  <section id="rules" data-component="CantinaRules">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Rules</h2>
+          <p>Please follow the rules!</p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Dinnerware rule -->
+        <div class="col-lg-3 col-md-6 col-sm-12 wow fadeIn">
+          <div class="rules-item text-center">
+            <a href="#" data-toggle="modal" data-target="#dinnerware">
+              <h3 class="overlay">The Dinnerware</h3>
+              <img src="images/rules/dinnerware.jpg" alt="dinnerware" />
+            </a>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="dinnerware" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content" style="color: #222;">
+              <!-- Modal header -->
+              <div class="modal-header">
+                <h3 class="modal-title">Do NOT take out dinnerware.</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    Dinnerware must stay at the Cantina all time.
+                    You are not allowed to take the dinnerware to your room...
+                    even if it is filled with food.
+                    If you would like to take your food,
+                    bring something to take it back with you.
+                  </div>
+                  <div class="col-md-6">
+                    <img src="images/rules/dinnerware.jpg" alt="dinnerware" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- rule-cleaning -->
+        <!-- Clean up your mess from tables and make sure you bring your dirty dishes to the proper bins. -->
+        <div class="col-lg-3 col-md-6 col-sm-12 wow fadeIn">
+          <div class="rules-item text-center">
+            <a href="#" data-toggle="modal" data-target="#dinnerware">
+              <h3 class="overlay">Clean Up</h3>
+              <img src="images/rules/clean.jpg" alt="clean" />
+            </a>
+          </div>
+        </div>
+
+        <!-- rule-stealing -->
+        <!-- If you come in the canina you have to pay, there is no free food.
+                All food includes free coffee, free fruit, free sodas... -->
+        <div class="col-lg-3 col-md-6 col-sm-12 wow fadeIn">
+          <div class="rules-item text-center">
+            <a href="#" data-toggle="modal" data-target="#dinnerware">
+              <h3 class="overlay">No Free Food</h3>
+              <img src="images/rules/steal.jpg" alt="steal" />
+            </a>
+          </div>
+        </div>
+
+        <!-- rule-help -->
+        <!-- If you need help with something, please ask. -->
+        <div class="col-lg-3 col-md-6 col-sm-12 wow fadeIn">
+          <div class="rules-item text-center">
+            <a href="#" data-toggle="modal" data-target="#dinnerware">
+              <h3 class="overlay">Ask for Help</h3>
+              <img src="images/rules/shy.jpg" alt="shy" />
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ section
+  ================ -->
+  <section id="faq" data-component="CantinaFAQ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>Frequently Asked Questions</h2>
+          <p>There is no such thing as stupid questions...</p>
+        </div>
+
+        <!-- FAQ 1 -->
+        <div class="col-md-12">
+          <div class="wow fadeInLeft faq-item text-left">
+            <i class="fas fa-utensils faq-icon"></i>
+            <span>How can I restore my Cantina pin number?</span>
+            <p>Molestias sapiente iusto asperiores ut et ex. Nam distinctio aut aut blanditiis ex nobis voluptates in. Autem architecto quia voluptatem illum corrupti. Provident corporis totam ab qui est iste. Sit et quo cumque.</p>
+          </div>
+        </div>
+        <!-- FAQ 2 -->
+        <div class="col-md-12">
+          <div class="dropdown wow fadeInLeft faq-item text-left">
+            <i class="fas fa-utensils faq-icon"></i>
+            <span>What is the payment method? Is cash allowed?</span>
+            <p>Molestias sapiente iusto asperiores ut et ex. Nam distinctio aut aut blanditiis ex nobis voluptates in. Autem architecto quia voluptatem illum corrupti. Provident corporis totam ab qui est iste. Sit et quo cumque.</p>
+          </div>
+        </div>
+        <!-- FAQ 3 -->
+        <div class="col-md-12">
+          <div class="dropdown wow fadeInLeft faq-item text-left">
+            <i class="fas fa-utensils faq-icon"></i>
+            <span>Which are the Marvin factoids for La Cantina?</span>
+            <p>
+              - To check the open hours, use: !cantina
+              <br />
+              - To check the menu, use: !menu
+            </p>
+          </div>
+        </div>
+        <!-- FAQ 4 -->
+        <div class="col-md-12">
+          <div class="dropdown wow fadeInLeft faq-item text-left">
+            <i class="fas fa-utensils faq-icon"></i>
+            <span>Do you offer veggie, gluten-free, or other special diets?</span>
+            <p>Molestias sapiente iusto asperiores ut et ex. Nam distinctio aut aut blanditiis ex nobis voluptates in. Autem architecto quia voluptatem illum corrupti. Provident corporis totam ab qui est iste. Sit et quo cumque.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section
+  =================== -->
+  <footer id="footer" class="footer text-center" data-component="CantinaFooter">
+    <div class="footer-top">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="widget wow jackInTheBox text-center">
+            <a target="_blank" href="https://42schoolsiliconvalley.slack.com/messages/_cantina/">
+              <h4 class="widget-title">La Cantina @ Slack</h4>
+              <div class="social-list"><i class="fab fa-slack"></i></div><br />
+            </a>
+            <address>Nostromo 42<br />34793 Ardentech Ct,<br />Fremont, CA 94555</address>
+            <p class="credits copyright clear-float">
+              <a href="https://scarletbytes.com/">
+                <img src="images/logos/scarletbytes.png" alt="scarletbytes logo" style="width: 150px; height: auto; padding-bottom: 10px;" />
+              </a>
+              <br />
+              <a href="https://jraleman.com/">by jraleman</a>
+              <br />
+              2018
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript files
+  ===================== -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/wow.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/cheet.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/pgwslider.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/script.js" charset="utf-8"></script>
+</body>
+
+</html>

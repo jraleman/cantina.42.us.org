@@ -12,7 +12,7 @@ class CantinaRules extends React.Component {
             </div>
           </div>
           <div className="row">
-            {}
+
             <div className="col-lg-3 col-md-6 col-sm-12 wow fadeIn">
               <div className="rules-item text-center">
                 <a href="#" data-toggle="modal" data-target="#dinnerware">
@@ -21,7 +21,7 @@ class CantinaRules extends React.Component {
                 </a>
               </div>
             </div>
-            {}
+
             <div
               className="modal fade"
               id="dinnerware"
@@ -69,8 +69,7 @@ class CantinaRules extends React.Component {
                 </div>
               </div>
             </div>
-            {}
-            {}
+
             <div className="col-lg-3 col-md-6 col-sm-12 wow fadeIn">
               <div className="rules-item text-center">
                 <a href="#" data-toggle="modal" data-target="#dinnerware">
@@ -79,8 +78,7 @@ class CantinaRules extends React.Component {
                 </a>
               </div>
             </div>
-            {}
-            {}
+
             <div className="col-lg-3 col-md-6 col-sm-12 wow fadeIn">
               <div className="rules-item text-center">
                 <a href="#" data-toggle="modal" data-target="#dinnerware">
@@ -89,8 +87,7 @@ class CantinaRules extends React.Component {
                 </a>
               </div>
             </div>
-            {}
-            {}
+
             <div className="col-lg-3 col-md-6 col-sm-12 wow fadeIn">
               <div className="rules-item text-center">
                 <a href="#" data-toggle="modal" data-target="#dinnerware">

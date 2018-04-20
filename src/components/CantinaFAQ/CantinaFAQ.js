@@ -10,7 +10,7 @@ class CantinaFAQ extends React.Component {
               <h2>Frequently Asked Questions</h2>
               <p>There is no such thing as stupid questions...</p>
             </div>
-            {}
+
             <div className="col-md-12">
               <div className="wow fadeInLeft faq-item text-left">
                 <i className="fas fa-utensils faq-icon" />
@@ -23,7 +23,7 @@ class CantinaFAQ extends React.Component {
                 </p>
               </div>
             </div>
-            {}
+
             <div className="col-md-12">
               <div className="dropdown wow fadeInLeft faq-item text-left">
                 <i className="fas fa-utensils faq-icon" />
@@ -36,7 +36,7 @@ class CantinaFAQ extends React.Component {
                 </p>
               </div>
             </div>
-            {}
+
             <div className="col-md-12">
               <div className="dropdown wow fadeInLeft faq-item text-left">
                 <i className="fas fa-utensils faq-icon" />
@@ -48,7 +48,7 @@ class CantinaFAQ extends React.Component {
                 </p>
               </div>
             </div>
-            {}
+
             <div className="col-md-12">
               <div className="dropdown wow fadeInLeft faq-item text-left">
                 <i className="fas fa-utensils faq-icon" />

@@ -6,12 +6,12 @@ class CantinaCarte extends React.Component {
       <section id="carte">
         <div className="container wow slideInRight">
           <div className="row">
-            {}
+
             <div className="col-md-12 text-center">
               <h2>Menu</h2>
               <p>Take a look at our delicious meals!</p>
             </div>
-            {}
+
             <div className="col-md-12 text-center" id="menu-filters">
               <ul>
                 <li>
@@ -36,9 +36,9 @@ class CantinaCarte extends React.Component {
                 </li>
               </ul>
             </div>
-            {}
+
             <div className="col-md-12 text-center" id="menu-wrapper">
-              {}
+
               <div className="breakfast menu-item">
                 <span className="clearfix">
                   <span className="menu-title text-left">
@@ -51,7 +51,7 @@ class CantinaCarte extends React.Component {
                   <strong>Feb 24 -> </strong> 07:00 - 09:00
                 </span>
               </div>
-              {}
+
               <div className="lunch menu-item">
                 <span className="clearfix">
                   <span className="menu-title text-left">
@@ -64,7 +64,7 @@ class CantinaCarte extends React.Component {
                   <strong>Feb 24 -> </strong> 12:00 - 14:00
                 </span>
               </div>
-              {}
+
               <div className="dinner menu-item">
                 <span className="clearfix">
                   <span className="menu-title text-left">

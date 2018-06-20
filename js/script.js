@@ -14,22 +14,10 @@ $(".scrollToSection").click(function(e) {
 ** .............................................................................
 */
 
-// Shows a section.
-function showSection(id) {
-  document.getElementById(id).style.display = "block";
-  return ;
-}
-
-// Hides a section.
-function hideSection(id) {
-  document.getElementById(id).style.display = "none";
-  return ;
-}
-
 // Changes to section.
 function toggleSection(id, time) {
   if (typeof time != 'number')
-    console.log("changeSection() : expected a number as transition time.")
+    console.log("toggleSection() : expected a number as transition time.")
   window.location.hash = id;
   document.body.scrollTop = document.documentElement.scrollTop = 0;
   return ;
@@ -40,15 +28,6 @@ function closeDashboard() {
   window.location.href = 'index.html';
   return;
 }
-
-// function loadDashboard() {
-//   if (document.readyState == "complete") {
-//     toggleSection('credit', 500);
-//     $("#dashboard").show(500);
-//    }
-//   return ;
-// }
-// document.onreadystatechange = loadDashboard();
 
 /*
 ** Navbar menu function(s)

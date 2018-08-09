@@ -1,0 +1,10 @@
+Credits:
+Jquery
+Bootstrap
+Font-awesome
+Google Maps
+Owl Carousel
+Images : Pexels, Pixabay, Unsplash
+Goolgle fonts : Quicksand, Cabin, Dancing Script
+
+https://colorlib.com/wp/template/risotto/

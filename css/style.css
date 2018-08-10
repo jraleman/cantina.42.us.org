@@ -5,7 +5,7 @@ Author: yaminncco
 Colors:
 	Body 		: #969696
 	Headers 	: #151515
-	Primary 	: #f36700
+	Primary 	: #01babc #01b7bc
 	Grey 		: #F9F9F9 #ECECEC
 
 Fonts: Quicksand, Cabin, Dancing Script
@@ -68,7 +68,7 @@ a {
 
 a:hover,
 a:focus{
-	color:#f36700;
+	color:#01babc;
     text-decoration: none;
     outline: none;
 }
@@ -100,7 +100,7 @@ ul,ol{
 	display: block;
 	width: 15px;
 	height: 2px;
-	background-color: #f36700;
+	background-color: #01babc;
 	margin: 15px 0px 30px;
 }
 
@@ -110,7 +110,7 @@ ul,ol{
 
 .section-header .sub-title {
 	font-weight:400;
-	color: #f36700;
+	color: #01babc;
 }
 
 /* --- Background Image --- */
@@ -146,7 +146,7 @@ ul,ol{
 	padding:15px 30px;
 	border:none;
 	border-radius:40px;
-	background-color:#f36700;
+	background-color:#01babc;
 	color:#FFF;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -224,8 +224,8 @@ textarea.input {
 
 .social-nav li a:hover , .social-nav li a:focus {
 	color: #FFF;
-	background-color: #f36700;
-	border-color: #f36700;
+	background-color: #01babc;
+	border-color: #01babc;
 }
 
 /* --- Bottom Nav --- */
@@ -240,7 +240,7 @@ textarea.input {
 
 .main-nav li a:hover , .contact-nav li a:hover , .main-nav li a:focus , .contact-nav li a:focus {
 	background-color:transparent;
-	color: #f36700;
+	color: #01babc;
 }
 
 .main-nav li a {
@@ -252,7 +252,7 @@ textarea.input {
 }
 
 .contact-nav li i {
-	color:#f36700;
+	color:#01babc;
 }
 
 .cta-nav {
@@ -559,8 +559,8 @@ textarea.input {
 }
 
 #galery.owl-theme .owl-nav [class*='owl-']:hover {
-	background-color:#f36700;
-	border-color:#f36700;
+	background-color:#01babc;
+	border-color:#01babc;
 	color:#FFF;
 }
 
@@ -601,7 +601,7 @@ textarea.input {
 
 .menu-nav li.active a {
 	color: #FFF;
-	background-color:#f36700;
+	background-color:#01babc;
 }
 
 .menu-nav li.active:before , .menu-nav li.active:after {
@@ -617,13 +617,13 @@ textarea.input {
 .menu-nav li.active:before {
 	left:0;
 	border-width: 20px 60px 0 0;
-	border-color: #f36500 transparent transparent;
+	border-color: #01b7bc transparent transparent;
 }
 
 .menu-nav li.active:after {
 	right:0;
 	border-width: 0 60px 20px 0;
-	border-color: transparent #f36500 transparent ;
+	border-color: transparent #01b7bc transparent ;
 }
 
 /* --- menu content --- */
@@ -665,7 +665,7 @@ textarea.input {
 	float:right;
 	background-color:#FFF;
 	padding-left: 10px;
-	color:#f36700;
+	color:#01babc;
 }
 
 /*------------------------------------*\
@@ -717,7 +717,7 @@ textarea.input {
 	font-size: 14px;
 	margin-top: 12px;
 	font-weight:400;
-	color:#f36500;
+	color:#01b7bc;
 }
 
 /*------------------------------------*\
@@ -744,7 +744,7 @@ textarea.input {
 	top: 0;
 	width: 60px;
 	height: 60px;
-	background: #f36700;
+	background: #01babc;
 	text-align: center;
 }
 
@@ -772,13 +772,13 @@ textarea.input {
 .event  .event-day:before {
 	left:0;
 	border-width: 20px 60px 0 0;
-	border-color: #f36500 transparent transparent;
+	border-color: #01b7bc transparent transparent;
 }
 
 .event  .event-day:after {
 	right:0;
 	border-width: 0 60px 20px 0;
-	border-color: transparent #f36500 transparent;
+	border-color: transparent #01b7bc transparent;
 }
 
 .event .event-content {
@@ -823,7 +823,7 @@ textarea.input {
 }
 
 .footer-nav a:hover , .footer-nav a:focus {
-	color:#f36500;
+	color:#01b7bc;
 }
 
 /*------------------------------------*\
@@ -842,7 +842,7 @@ textarea.input {
 	top: 0;
 	width: 90px;
 	height: 90px;
-	background: #f36700;
+	background: #01babc;
 	text-align: center;
 	z-index:10;
 }
@@ -871,13 +871,13 @@ textarea.input {
 .blog-day:after {
 	left:0;
 	border-width: 20px 60px 0 0;
-	border-color: #f36500 transparent transparent;
+	border-color: #01b7bc transparent transparent;
 }
 
 .blog-day:before {
 	right:0;
 	border-width: 0 60px 20px 0;
-	border-color: transparent #f36500 transparent ;
+	border-color: transparent #01b7bc transparent ;
 }
 
 .blog-meta {
@@ -904,7 +904,7 @@ textarea.input {
 }
 
 .blog-meta li i {
-	color:#f36500;
+	color:#01b7bc;
 	margin-right:5px;
 }
 
@@ -927,7 +927,7 @@ textarea.input {
 }
 
 .blog-tags a:hover {
-	color:#f36500;
+	color:#01b7bc;
 }
 
 /* --- blog share --- */
@@ -1183,7 +1183,7 @@ textarea.input {
 	height:30px;
 	width:30px;
 	border-radius:50%;
-	border:2px solid #f36700;
+	border:2px solid #01babc;
 	-webkit-transform:translateY(-40px);
 	    -ms-transform:translateY(-40px);
 	        transform:translateY(-40px);

@@ -1084,7 +1084,7 @@ var card =
 	      type: 'visa',
 	      pattern: /^4/,
 	      format: defaultFormat,
-	      length: [13, 16, 19],
+	      length: [16],
 	      cvcLength: [3],
 	      luhn: true
 	    }

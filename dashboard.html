@@ -167,27 +167,27 @@
                 <div class="form-row">
                   <div class="form-group col-md-7">
                     <label for="cardNumber">Card Number</label>
-                    <input type="tel" class="form-control" id="cardNumber" placeholder="0000 0000 0000 0000">
+                    <input type="tel" class="form-control" id="cardNumber" placeholder="0000 0000 0000 0000" />
                   </div>
                   <div class="form-group col-md-3">
                     <label for="cardDate">Expiration Date</label>
-                    <input type="tel" class="form-control" id="cardDate" placeholder="00 / 00">
+                    <input type="tel" class="form-control" id="cardDate" placeholder="00 / 00" maxlength="7" />
                   </div>
                   <div class="form-group col-md-2">
                     <label for="cardCVC">CVC</label>
-                    <input type="tel" class="form-control" id="cardCVC" placeholder="000">
+                    <input type="tel" class="form-control" id="cardCVC" placeholder="000" maxlength="3" />
                   </div>
                 </div>
                 <div class="form-row">
                   <div class="col-md-12">
                     <label for="cardName">Full Name</label>
-                    <input type="text" class="form-control" id="cardName" placeholder="Esteban Julio Ricardo Montoya de la Rosa Ramírez">
+                    <input type="text" class="form-control" id="cardName" placeholder="Esteban Julio Ricardo Montoya de la Rosa Ramírez" maxlength="50" />
                   </div>
                 </div>
                 <div class="form-row">
                   <div class="col-md-3">
                     <label for="creditAmount" style="padding-top: 36px;">Amount ($)</label>
-                    <input type="number" class="form-control" id="creditAmount" placeholder="6">
+                    <input type="number" class="form-control" id="creditAmount" placeholder="6" min="1" max="999" />
                   </div>
                 </div>
                 <div class="form-row">
@@ -277,7 +277,7 @@
           <div class="blog-reply-form"  style="padding-bottom: 24px; padding-top: 24px;">
             <h3 class="title">Write a Comment</h3>
             <form>
-              <textarea class="input" placeholder="Speak your mind..."></textarea>
+              <textarea class="input" placeholder="Speak your mind... (max 420 characters)"  maxlength="420" ></textarea>
             </form>
             <a href="#" class="main-button">
                 <i class="fa fa-heart"></i>

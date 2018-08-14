@@ -162,20 +162,40 @@
           <div class="dashboard-credit" style="padding-bottom: 24px; padding-top: 24px;">
             <h3 class="title">Add Credit</h3>
             <div class="row">
-              <!-- Card wrapper -->
-              <div class="col-md-6">
-                <div class='card-wrapper'></div>
-              </div>
-              <!-- Credit card form -->
-              <div class="col-md-6 ">
-                <form class="card-form">
-                  <input id="input-field" type="text" name="amount" placeholder="Amount ($)" />
-                  <input id="input-field" type="text" name="number" placeholder="Card Number" />
-                  <input id="column-left" type="text" name="expiry" placeholder="MM / YY" />
-                  <input id="column-right" type="text" name="cvc" placeholder="CCV" />
-                </form>
-                <a href="#" class="main-button">Add Credit</a>
-              </div>
+              <div class='card-wrapper'></div>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-7">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="tel" class="form-control" id="cardNumber" placeholder="0000 0000 0000 0000">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="cardDate">Expiration Date</label>
+                    <input type="tel" class="form-control" id="cardDate" placeholder="00 / 00">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="cardCCV">CCV</label>
+                    <input type="tel" class="form-control" id="cardCCV" placeholder="000">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12">
+                    <label for="inputAddress">Full Name</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Esteban Julio Ricardo Montoya de la Rosa Ramírez">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-3">
+                    <label for="inputAddress" style="padding-top: 36px;">Amount ($)</label>
+                    <input type="number" class="form-control" id="inputAddress" placeholder="6">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12" style="padding-top: 12px;">
+                    <a href="#" class="main-button">Add Credit</a>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
           <!-- Weekly Specials

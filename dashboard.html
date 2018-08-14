@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic meta info
+       =============== -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cantina :: Dashboard</title>
+  <!--
+    The above 3 meta tags *must* come first in the head;
+    any other head content must come *after* these tags
+  -->
+  <!-- CSS files
+       ========= -->
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+  <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+  <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+  <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <!-- Font files
+       ========== -->
+  <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Quicksand:400,700%7CCabin:400%7CDancing+Script" />
+  <!--
+    HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    WARNING: Respond.js doesn't work if you view the page via file://
+  -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!-- Preloader
+       ========= -->
+  <div id="preloader">
+    <div class="preloader">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <!-- Header // Navbar
+       ================ -->
+  <header id="header">
+    <div id="top-nav">
+      <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="images/logo-black.png" alt="logo" style="vertical-align: middle; margin-top: -20px; padding-right: 8px" />
+          <h1 style="font-family: 'Dancing Script', cursive; font-size: 48px; margin-top: -6px; display: inline;">La Cantina</h1>
+        </div>
+        <!-- Mobile toggle -->
+        <button class="navbar-toggle">
+          <span></span>
+        </button>
+        <!-- Social links -->
+        <ul class="social-nav">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <span class="" style="padding-left: 18px; padding-right: 8px;">
+            <img src="images/42-logo.png" alt="logo" style="vertical-align: middle;" width=71 height=50 />
+          </span>
+        </ul>
+      </div>
+    </div>
+    <div id="bottom-nav">
+      <div class="container">
+        <nav id="nav">
+          <!-- Menu list -->
+          <ul class="main-nav nav navbar-nav">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Add Credit</a></li>
+            <li><a href="#">Payments</a></li>
+          </ul>
+          <ul class="cta-nav">
+            <li>
+              <a href="index.html" class="main-button">
+                <i class="fa fa-sign-out"></i>
+                <span style="padding-left: 4px;">Log Out</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="contact-nav nav navbar-nav">
+            <li>
+              <a href="#">
+                <i class="fa fa-slack"></i>
+                 <span style="padding-left: 4px;"> #_cantina</span>
+             </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Banner Section
+       ============== -->
+  <div class="banner-area">
+    <div class="bg-image bg-parallax overlay" style="background: radial-gradient(#01BABC, #ccf1f1);"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="white-text title">Dashboard</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Dashboard Section
+       ================= -->
+  <div id="blog" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <!-- User info -->
+          <h2>Welcome back, { USERNAME }</h2>
+          <h4>Credit : {$ amount}</h4>
+          <h4>Ningis : {amount}</h4>
+          <a href="#">
+              <i class="fa fa-id-card"></i>
+              <span style="padding-left: 4px;">
+                <i> Click here to change your ping</i>
+              </span>
+            </a>
+          <!-- Today's Menu
+               ============ -->
+          <div class="dashboard-menu" style="padding-bottom: 24px; padding-top: 24px;">
+            <h3 class="title">Today's Menu</h3>
+            <div class="blog-img">
+              <img src="./images/food-menu.jpg" alt="" />
+              <div class="blog-day">
+                <span>22<br>Aug</span>
+              </div>
+              <div class="container">
+                <ul class="blog-meta" style="width: 100%; height: auto;">
+                  <div class="align-self-start">
+                    <li style=" display: block; height: 100px;">
+                      <strong>Lunch : </strong>
+                      <i>Turkey Pastrami Melt served with Fries Vegetarian Entree Veggie Melt</i>
+                    </li>
+                  </div>
+                  <div class="align-self-center">
+                    <li style=" display: block; height: 100px;">
+                      <strong>Dinner : </strong>
+                      <i>Beef Brisket BBQ Sauce and Baked Potato Vegetarian Entree Loaded Potato</i>
+                    </li>
+                  </div>
+                  <div class="align-self-end">
+                    <li style=" display: block; height: 100px;">
+                      <strong>Cafe 42 : </strong>
+                      <i>Happy Brownies</i>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Add Credit section
+               ================== -->
+          <div class="dashboard-credit" style="padding-bottom: 24px; padding-top: 24px;">
+            <h3 class="title">Add Credit</h3>
+            <div class="row">
+              <div class='card-wrapper'></div>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-7">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="tel" class="form-control" id="cardNumber" placeholder="0000 0000 0000 0000">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="cardDate">Expiration Date</label>
+                    <input type="tel" class="form-control" id="cardDate" placeholder="00 / 00">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="cardCCV">CCV</label>
+                    <input type="tel" class="form-control" id="cardCCV" placeholder="000">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12">
+                    <label for="inputAddress">Full Name</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Esteban Julio Ricardo Montoya de la Rosa Ramírez">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-3">
+                    <label for="inputAddress" style="padding-top: 36px;">Amount ($)</label>
+                    <input type="number" class="form-control" id="inputAddress" placeholder="6">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12" style="padding-top: 12px;">
+                    <a href="#" class="main-button">Add Credit</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- Weekly Specials
+               =============== -->
+          <div class="dashboard-specials"  style="padding-bottom: 24px; padding-top: 24px;">
+            <h3 class="title">Weekly Specials</h3>
+            <div class="blog-nav">
+              <div class="row">
+                <!-- Left Special -->
+                <div class="col-md-6">
+                  <div class="blog-previous">
+                    <a href="#">
+                        <img src="https://d3cizcpymoenau.cloudfront.net/images/37752/SFS_chorizo_potato_tacos-64.jpg" alt="taco" width=120 height=120 />
+                        <div>
+                          <h3>Taco Taco Tuesday</h3>
+                          <h4>Get three just at $2 each.</h4>
+                        </div>
+                      </a>
+                  </div>
+                </div>
+                <!-- Right Special -->
+                <div class="col-md-6">
+                  <div class="blog-next">
+                    <a href="#">
+                      <div>
+                        <h3>Suprise Saturday</h3>
+                        <h4>A new dish every time!</h4>
+                      </div>
+                      <img src="http://blog.smartd.in/wp-content/uploads/2016/10/variety-food.jpg" alt="suprise" width=120 height=120 />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Payments section
+               ================ -->
+          <div class="dashboard-meal"  style="padding-bottom: 24px; padding-top: 24px;">
+            <h3 class="title">Past Payments</h3>
+            <!-- Meals table -->
+            <div class="row">
+              <div class="col-md-12">
+                <table class="table table-bordered table-hover table-striped meals-table" summary="Eaten meals table">
+                  <!-- Table Head -->
+                  <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>Menu</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <!-- Table Body -->
+                  <tbody>
+                    <!-- #1 -->
+                    <tr>
+                      <td>Mon, 06 Aug 2018 17:48:08</td>
+                      <td>Broccoli Beef & Rice Vegetarian Entree Broccoli Tofu</td>
+                      <td>6</td>
+                    </tr>
+                    <!-- #2 -->
+                    <tr>
+                      <td>Sun, 05 Aug 2018 17:45:13</td>
+                      <td>Coconut Curry Chicken served over Basmati Rice Vegetarian Entree Coconut Curry Tofu</td>
+                      <td>6</td>
+                    </tr>
+                    <!-- #3 -->
+                    <tr>
+                      <td>Fri, 03 Aug 2018 18:23:14</td>
+                      <td> 	Lemongrass Ground Chicken Rice Bowl Vegetarian Entree Lemongrass Tofu Rice Bowl</td>
+                      <td>5</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- Comment form
+               ============ -->
+          <div class="blog-reply-form"  style="padding-bottom: 24px; padding-top: 24px;">
+            <h3 class="title">Write a Comment</h3>
+            <form>
+              <textarea class="input" placeholder="Speak your mind..."></textarea>
+            </form>
+            <a href="#" class="main-button">
+                <i class="fa fa-heart"></i>
+                <span style="padding-left: 4px;">Submit</span>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer
+       ====== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          <span class="copyright">Copyright @2018 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></span>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </div>
+        <div class="col-md-6">
+          <p style="text-align: right;">Developed and integrated by <a href="https://github.com/jraleman" target="_blank" style="color: white;">@jaleman</a> & <a href="https://github.com/Lunairi" target="_blank" style="color: white;">@mlu</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript files
+       ================ -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

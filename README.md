@@ -1,5 +1,13 @@
 # La Cantina
 
+## Styleguide
+
+### Fonts
+
+- [Quicksand](#)
+- [Cabin](#)
+- [Dancing Script](#)
+
 ## Dependencies
 
 - jQuery

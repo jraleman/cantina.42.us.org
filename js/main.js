@@ -82,8 +82,6 @@
 
 })(jQuery);
 
-
-
 function showAll() {
 	var tabCount = 3;
 	for (var i = 1; i <= tabCount; i += 1) {
@@ -93,3 +91,11 @@ function showAll() {
 	}
   return ;
 }
+
+var checkMeal = function () {
+	document.getElementById('menu-lunch').setAttribute('checked', true);
+	document.getElementById('menu-dinner').setAttribute('checked', true);
+	return ;
+}
+
+setTimeout(checkMeal, 1750);

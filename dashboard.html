@@ -87,9 +87,9 @@
         <nav id="nav">
           <!-- Menu list -->
           <ul class="main-nav nav navbar-nav">
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Add Credit</a></li>
-            <li><a href="#">Payments</a></li>
+            <li><a href="#dashboard-menu">Menu</a></li>
+            <li><a href="#dashboard-credit">Add Credit</a></li>
+            <li><a href="#dashboard-meal">Payments</a></li>
           </ul>
           <ul class="cta-nav">
             <li>
@@ -131,8 +131,8 @@
         <div class="col-md-8 col-md-offset-2">
           <!-- User info -->
           <h2>Welcome back, { USERNAME }</h2>
-          <h4>Credit : {$ amount}</h4>
-          <h4>Ningis : {amount}</h4>
+          <h4>Credit : ${ creditAmount}</h4>
+          <h4>Ningis : { ningiAmount }</h4>
           <a href="#">
               <i class="fa fa-id-card"></i>
               <span style="padding-left: 4px;">
@@ -141,7 +141,7 @@
             </a>
           <!-- Today's Menu
                ============ -->
-          <div class="dashboard-menu" style="padding-bottom: 24px; padding-top: 24px;">
+          <div id="dashboard-menu" class="dashboard-menu" style="padding-bottom: 24px; padding-top: 24px;">
             <h3 class="title">Today's Menu</h3>
             <div class="blog-img">
               <img src="./images/food-menu.jpg" alt="" />
@@ -174,7 +174,7 @@
           </div>
           <!-- Add Credit section
                ================== -->
-          <div class="dashboard-credit" style="padding-bottom: 24px; padding-top: 24px;">
+          <div id="dashboard-credit" class="dashboard-credit" style="padding-bottom: 24px; padding-top: 24px;">
             <h3 class="title">Add Credit</h3>
             <div class="row">
               <div class='card-wrapper'></div>
@@ -215,7 +215,7 @@
           </div>
           <!-- Weekly Specials
                =============== -->
-          <div class="dashboard-specials"  style="padding-bottom: 24px; padding-top: 24px;">
+          <div id="dashboard-specials" class="dashboard-specials"  style="padding-bottom: 24px; padding-top: 24px;">
             <h3 class="title">Weekly Specials</h3>
             <div class="blog-nav">
               <div class="row">
@@ -248,7 +248,7 @@
           </div>
           <!-- Payments section
                ================ -->
-          <div class="dashboard-meal"  style="padding-bottom: 24px; padding-top: 24px;">
+          <div id="dashboard-meal" class="dashboard-meal"  style="padding-bottom: 24px; padding-top: 24px;">
             <h3 class="title">Past Payments</h3>
             <!-- Meals table -->
             <div class="row">
@@ -290,7 +290,7 @@
           <!-- Comment form
                ============ -->
           <div class="blog-reply-form"  style="padding-bottom: 24px; padding-top: 24px;">
-            <h3 class="title">Write a Comment</h3>
+            <h3 class="title">Let us know what you think!</h3>
             <form>
               <textarea class="input" placeholder="Speak your mind... (max 420 characters)"  maxlength="420" ></textarea>
             </form>

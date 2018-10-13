@@ -26,8 +26,8 @@
 	});
 	bannerHeight();
 
-	// Galery Slider
-	$('#galery').owlCarousel({
+	// Gallery Slider
+	$('#gallery').owlCarousel({
 		items:2,
 		loop:true,
 		margin:0,
@@ -81,3 +81,15 @@
 	}
 
 })(jQuery);
+
+
+
+function showAll() {
+	var tabCount = 3;
+	for (var i = 1; i <= tabCount; i += 1) {
+		var id = "menu" + String(i);
+		document.getElementById(id).classList.add('in');
+		document.getElementById(id).classList.add('active');
+	}
+  return ;
+}

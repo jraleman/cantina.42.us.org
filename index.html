@@ -33,15 +33,6 @@
 </head>
 
 <body>
-  <!-- Preloader
-       ========= -->
-  <div id="preloader">
-    <div class="preloader">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
   <!-- Header // Navbar
        ================ -->
   <header id="header">
@@ -146,13 +137,15 @@
         </div>
         <!-- Menu navigation -->
         <ul class="menu-nav">
-          <li class="active"><a data-toggle="tab" href="#menu0">All</a></li>
+          <li class="active">
+            <a data-toggle="tab" href="#menu-content" onclick="showAll();">All</a>
+          </li>
           <li><a data-toggle="tab" href="#menu1">Lunch</a></li>
           <li><a data-toggle="tab" href="#menu2">Dinner</a></li>
           <li><a data-toggle="tab" href="#menu3">Café 42</a></li>
         </ul>
         <!-- Menu content -->
-        <div id="menu-content" class="tab-content">
+        <div id="menu-content" class="tab-content fade in active">
           <!-- Lunch -->
           <div id="menu1" class="tab-pane fade in active">
             <div class="col-md-12">
@@ -294,22 +287,22 @@
         </div>
         <!-- Gallery Slider -->
         <div class="col-md-12">
-          <div id="galery" class="owl-carousel owl-theme">
-            <div class="galery-item">
-              <div class="galery-img" style="background-image:url(./img/image01.jpg)"></div>
+          <div id="gallery" class="owl-carousel owl-theme">
+            <div class="gallery-item">
+              <div class="gallery-img" style="background-image:url(./img/image01.jpg)"></div>
             </div>
-            <div class="galery-item">
-              <div class="galery-img" style="background-image:url(./img/image02.jpg)"></div>
-              <div class="galery-img" style="background-image:url(./img/image03.jpg)"></div>
+            <div class="gallery-item">
+              <div class="gallery-img" style="background-image:url(./img/image02.jpg)"></div>
+              <div class="gallery-img" style="background-image:url(./img/image03.jpg)"></div>
             </div>
-            <div class="galery-item">
+            <div class="gallery-item">
               <div class="item-column">
-                <div class="galery-img" style="background-image:url(./img/image04.jpg)"></div>
-                <div class="galery-img" style="background-image:url(./img/image05.jpg)"></div>
+                <div class="gallery-img" style="background-image:url(./img/image04.jpg)"></div>
+                <div class="gallery-img" style="background-image:url(./img/image05.jpg)"></div>
               </div>
               <div class="item-column">
-                <div class="galery-img" style="background-image:url(./img/image06.jpg)"></div>
-                <div class="galery-img" style="background-image:url(./img/image07.jpg)"></div>
+                <div class="gallery-img" style="background-image:url(./img/image06.jpg)"></div>
+                <div class="gallery-img" style="background-image:url(./img/image07.jpg)"></div>
               </div>
             </div>
           </div>

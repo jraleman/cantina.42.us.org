@@ -93,8 +93,16 @@ function showAll() {
 }
 
 var checkMeal = function () {
-	document.getElementById('menu-lunch').setAttribute('checked', true);
-	document.getElementById('menu-dinner').setAttribute('checked', true);
+	var dt = new Date();
+	var currentMinutes = dt.getUTCMinutes() + (((dt.getUTCHours() - 7) % 24 ) * 60);
+	const lunchHourEnd = 14;
+	const dinnerHourEnd = 18.5;
+	if (currentMinutes > lunchHourEnd * 60) {
+		document.getElementById('menu-lunch').setAttribute('checked', true);
+	}
+	if (currentMinutes > dinnerHourEnd * 60) {
+		document.getElementById('menu-dinner').setAttribute('checked', true);
+	}
 	return ;
 }
 

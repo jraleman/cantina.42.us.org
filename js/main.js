@@ -80,8 +80,16 @@
 	  console.log("Error: " + err.message);
 	}
 
+
 })(jQuery);
 
+// dashboard meal
+$(document).ready(function () {
+  // false to disable pagination (or any other option)
+  $('#payment-table').DataTable({ "paging": true });
+});
+
+// Show all item from the cantina menu (front)
 function showAll() {
 	var tabCount = 3;
 	for (var i = 1; i <= tabCount; i += 1) {
@@ -92,6 +100,7 @@ function showAll() {
   return ;
 }
 
+// Stroke an already passed meal
 var checkMeal = function () {
 	var dt = new Date();
 	var currentMinutes = dt.getUTCMinutes() + (((dt.getUTCHours() - 7) % 24 ) * 60);
@@ -105,5 +114,4 @@ var checkMeal = function () {
 	}
 	return ;
 }
-
 setTimeout(checkMeal, 1750);

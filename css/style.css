@@ -658,7 +658,7 @@ textarea.input {
 	font-family:'Cabin', sans-serif;
 	background-color: #FFF;
 	padding-right: 10px;
-	font-weight:400;
+	font-weight: 400;
 }
 
 .single-dish .price {
@@ -666,6 +666,7 @@ textarea.input {
 	background-color:#FFF;
 	padding-left: 10px;
 	color:#01babc;
+
 }
 
 /*------------------------------------*\
@@ -1109,6 +1110,9 @@ textarea.input {
 }
 
 @media only screen and (max-width: 767px) {
+  .single-dish-heading .name {
+    width: 420px;
+  }
 	/* --- contact nav --- */
 	.contact-nav {
 		display:block;
@@ -1135,6 +1139,7 @@ textarea.input {
 }
 
 @media only screen and (max-width: 480px) {
+
 	/* --- social nav --- */
 	.social-nav  {
 		display:none;

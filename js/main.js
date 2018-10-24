@@ -129,3 +129,23 @@ var checkMeal = function () {
 	return ;
 }
 setTimeout(checkMeal, 1750);
+
+var sequences = {
+  unaPena: 'u n a p e n a',
+  tty: 't t y',
+	konami: 'up up down down left right left right b a'
+};
+cheet(sequences.unaPena);
+cheet(sequences.tty);
+cheet(sequences.konami);
+cheet.done(function (seq) {
+  if (seq === sequences.unaPena) {
+    window.alert('Una Pena...');
+  }
+	else if (seq === sequences.tty) {
+    window.alert('Did somebody poop? 💩');
+  }
+	else if (seq === sequences.konami) {
+    window.alert('Konami code!');
+  }
+});

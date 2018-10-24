@@ -83,10 +83,24 @@
 
 })(jQuery);
 
-// dashboard meal
+// Dashboard - Eaten Meals Table
 $(document).ready(function () {
   // false to disable pagination (or any other option)
-  $('#payment-table').DataTable({ "paging": true });
+  $('#eaten-meals').DataTable({
+		'paging': true,
+		'pagingType': 'simple_numbers',
+		'stateSave': true
+	 });
+});
+
+// Dashboard - Past Transactions Table
+$(document).ready(function () {
+  // false to disable pagination (or any other option)
+  $('#past-transactions').DataTable({
+		'paging': true,
+		'pagingType': 'simple_numbers',
+		'stateSave': true
+	 });
 });
 
 // Show all item from the cantina menu (front)

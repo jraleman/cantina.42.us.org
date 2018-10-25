@@ -129,15 +129,21 @@ var checkMeal = function () {
 	return ;
 }
 setTimeout(checkMeal, 1750);
-
+// ???
 var sequences = {
   unaPena: 'u n a p e n a',
   tty: 't t y',
-	konami: 'up up down down left right left right b a'
+	konami: 'up up down down left right left right b a',
+	milk: 'm i l k'
 };
+for (var i = 0; i < Object.keys(sequences).length; i += 1) {
+	// cheet('sequences.'+Object.keys(sequences)[i]);
+	console.log(Object.keys(sequences)[i]);
+}
 cheet(sequences.unaPena);
 cheet(sequences.tty);
 cheet(sequences.konami);
+cheet(sequences.milk);
 cheet.done(function (seq) {
   if (seq === sequences.unaPena) {
     window.alert('Una Pena...');
@@ -147,5 +153,8 @@ cheet.done(function (seq) {
   }
 	else if (seq === sequences.konami) {
     window.alert('Konami code!');
+  }
+	else if (seq === sequences.milk) {
+    window.open("images/placeholder.jpg", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
   }
 });
